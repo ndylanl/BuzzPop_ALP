@@ -8,14 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var isSplashScreenShown = true
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        Group {
+            if isSplashScreenShown {
+                SplashScreen()
+                    .transition(.opacity) // Add fade transition animation
+                    .onAppear {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) { // Change duration time as per your requirement
+                            withAnimation(.easeOut(duration: 1.0)) {
+                                self.isSplashScreenShown = false
+                            }
+                        }
+                    }
+            } else {
+                GameView()
+            }
         }
-        .padding()
     }
 }
 

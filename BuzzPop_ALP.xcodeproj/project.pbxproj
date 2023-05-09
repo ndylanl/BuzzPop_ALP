@@ -14,6 +14,14 @@
 		0474BDE42A0A660B00D9A3FE /* BuzzPop_ALPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474BDE32A0A660B00D9A3FE /* BuzzPop_ALPTests.swift */; };
 		0474BDEE2A0A660B00D9A3FE /* BuzzPop_ALPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474BDED2A0A660B00D9A3FE /* BuzzPop_ALPUITests.swift */; };
 		0474BDF02A0A660B00D9A3FE /* BuzzPop_ALPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474BDEF2A0A660B00D9A3FE /* BuzzPop_ALPUITestsLaunchTests.swift */; };
+		0474BDFE2A0A6C8000D9A3FE /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474BDFD2A0A6C8000D9A3FE /* Music.swift */; };
+		0474BE002A0A6C8A00D9A3FE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474BDFF2A0A6C8A00D9A3FE /* User.swift */; };
+		0474BE022A0A6C9F00D9A3FE /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474BE012A0A6C9F00D9A3FE /* Game.swift */; };
+		0474BE042A0A6CAD00D9A3FE /* Leaderboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474BE032A0A6CAD00D9A3FE /* Leaderboard.swift */; };
+		0474BE0B2A0A726700D9A3FE /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474BE0A2A0A726700D9A3FE /* GameView.swift */; };
+		0474BE0D2A0A730B00D9A3FE /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474BE0C2A0A730B00D9A3FE /* SplashScreen.swift */; };
+		0474BE112A0A804C00D9A3FE /* MainGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474BE102A0A804C00D9A3FE /* MainGameView.swift */; };
+		0474BE132A0A805B00D9A3FE /* GameControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474BE122A0A805B00D9A3FE /* GameControlView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +52,14 @@
 		0474BDE92A0A660B00D9A3FE /* BuzzPop_ALPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuzzPop_ALPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0474BDED2A0A660B00D9A3FE /* BuzzPop_ALPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuzzPop_ALPUITests.swift; sourceTree = "<group>"; };
 		0474BDEF2A0A660B00D9A3FE /* BuzzPop_ALPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuzzPop_ALPUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0474BDFD2A0A6C8000D9A3FE /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
+		0474BDFF2A0A6C8A00D9A3FE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		0474BE012A0A6C9F00D9A3FE /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		0474BE032A0A6CAD00D9A3FE /* Leaderboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leaderboard.swift; sourceTree = "<group>"; };
+		0474BE0A2A0A726700D9A3FE /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		0474BE0C2A0A730B00D9A3FE /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		0474BE102A0A804C00D9A3FE /* MainGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGameView.swift; sourceTree = "<group>"; };
+		0474BE122A0A805B00D9A3FE /* GameControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameControlView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +110,11 @@
 		0474BDD12A0A660900D9A3FE /* BuzzPop_ALP */ = {
 			isa = PBXGroup;
 			children = (
+				0474BE062A0A722400D9A3FE /* View */,
+				0474BDFC2A0A69C300D9A3FE /* Model */,
 				0474BDD22A0A660900D9A3FE /* BuzzPop_ALPApp.swift */,
 				0474BDD42A0A660900D9A3FE /* ContentView.swift */,
+				0474BE0C2A0A730B00D9A3FE /* SplashScreen.swift */,
 				0474BDD62A0A660B00D9A3FE /* Assets.xcassets */,
 				0474BDD82A0A660B00D9A3FE /* Preview Content */,
 			);
@@ -125,6 +144,35 @@
 				0474BDEF2A0A660B00D9A3FE /* BuzzPop_ALPUITestsLaunchTests.swift */,
 			);
 			path = BuzzPop_ALPUITests;
+			sourceTree = "<group>";
+		};
+		0474BDFC2A0A69C300D9A3FE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0474BDFD2A0A6C8000D9A3FE /* Music.swift */,
+				0474BDFF2A0A6C8A00D9A3FE /* User.swift */,
+				0474BE012A0A6C9F00D9A3FE /* Game.swift */,
+				0474BE032A0A6CAD00D9A3FE /* Leaderboard.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0474BE062A0A722400D9A3FE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0474BE092A0A724C00D9A3FE /* Game */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0474BE092A0A724C00D9A3FE /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				0474BE0A2A0A726700D9A3FE /* GameView.swift */,
+				0474BE102A0A804C00D9A3FE /* MainGameView.swift */,
+				0474BE122A0A805B00D9A3FE /* GameControlView.swift */,
+			);
+			path = Game;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +305,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0474BE0D2A0A730B00D9A3FE /* SplashScreen.swift in Sources */,
+				0474BE112A0A804C00D9A3FE /* MainGameView.swift in Sources */,
+				0474BE002A0A6C8A00D9A3FE /* User.swift in Sources */,
+				0474BE042A0A6CAD00D9A3FE /* Leaderboard.swift in Sources */,
+				0474BE022A0A6C9F00D9A3FE /* Game.swift in Sources */,
 				0474BDD52A0A660900D9A3FE /* ContentView.swift in Sources */,
 				0474BDD32A0A660900D9A3FE /* BuzzPop_ALPApp.swift in Sources */,
+				0474BDFE2A0A6C8000D9A3FE /* Music.swift in Sources */,
+				0474BE132A0A805B00D9A3FE /* GameControlView.swift in Sources */,
+				0474BE0B2A0A726700D9A3FE /* GameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
