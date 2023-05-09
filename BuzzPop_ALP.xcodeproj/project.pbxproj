@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0474BDD32A0A660900D9A3FE /* BuzzPop_ALPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474BDD22A0A660900D9A3FE /* BuzzPop_ALPApp.swift */; };
+		0474BDD52A0A660900D9A3FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474BDD42A0A660900D9A3FE /* ContentView.swift */; };
+		0474BDD72A0A660B00D9A3FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0474BDD62A0A660B00D9A3FE /* Assets.xcassets */; };
+		0474BDDA2A0A660B00D9A3FE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0474BDD92A0A660B00D9A3FE /* Preview Assets.xcassets */; };
+		0474BDE42A0A660B00D9A3FE /* BuzzPop_ALPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474BDE32A0A660B00D9A3FE /* BuzzPop_ALPTests.swift */; };
+		0474BDEE2A0A660B00D9A3FE /* BuzzPop_ALPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474BDED2A0A660B00D9A3FE /* BuzzPop_ALPUITests.swift */; };
+		0474BDF02A0A660B00D9A3FE /* BuzzPop_ALPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474BDEF2A0A660B00D9A3FE /* BuzzPop_ALPUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0474BDE02A0A660B00D9A3FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0474BDC72A0A660900D9A3FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0474BDCE2A0A660900D9A3FE;
+			remoteInfo = BuzzPop_ALP;
+		};
+		0474BDEA2A0A660B00D9A3FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0474BDC72A0A660900D9A3FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0474BDCE2A0A660900D9A3FE;
+			remoteInfo = BuzzPop_ALP;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0474BDCF2A0A660900D9A3FE /* BuzzPop_ALP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuzzPop_ALP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0474BDD22A0A660900D9A3FE /* BuzzPop_ALPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuzzPop_ALPApp.swift; sourceTree = "<group>"; };
+		0474BDD42A0A660900D9A3FE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0474BDD62A0A660B00D9A3FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0474BDD92A0A660B00D9A3FE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0474BDDF2A0A660B00D9A3FE /* BuzzPop_ALPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuzzPop_ALPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0474BDE32A0A660B00D9A3FE /* BuzzPop_ALPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuzzPop_ALPTests.swift; sourceTree = "<group>"; };
+		0474BDE92A0A660B00D9A3FE /* BuzzPop_ALPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuzzPop_ALPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0474BDED2A0A660B00D9A3FE /* BuzzPop_ALPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuzzPop_ALPUITests.swift; sourceTree = "<group>"; };
+		0474BDEF2A0A660B00D9A3FE /* BuzzPop_ALPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuzzPop_ALPUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0474BDCC2A0A660900D9A3FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0474BDDC2A0A660B00D9A3FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0474BDE62A0A660B00D9A3FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0474BDC62A0A660900D9A3FE = {
+			isa = PBXGroup;
+			children = (
+				0474BDD12A0A660900D9A3FE /* BuzzPop_ALP */,
+				0474BDE22A0A660B00D9A3FE /* BuzzPop_ALPTests */,
+				0474BDEC2A0A660B00D9A3FE /* BuzzPop_ALPUITests */,
+				0474BDD02A0A660900D9A3FE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0474BDD02A0A660900D9A3FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0474BDCF2A0A660900D9A3FE /* BuzzPop_ALP.app */,
+				0474BDDF2A0A660B00D9A3FE /* BuzzPop_ALPTests.xctest */,
+				0474BDE92A0A660B00D9A3FE /* BuzzPop_ALPUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0474BDD12A0A660900D9A3FE /* BuzzPop_ALP */ = {
+			isa = PBXGroup;
+			children = (
+				0474BDD22A0A660900D9A3FE /* BuzzPop_ALPApp.swift */,
+				0474BDD42A0A660900D9A3FE /* ContentView.swift */,
+				0474BDD62A0A660B00D9A3FE /* Assets.xcassets */,
+				0474BDD82A0A660B00D9A3FE /* Preview Content */,
+			);
+			path = BuzzPop_ALP;
+			sourceTree = "<group>";
+		};
+		0474BDD82A0A660B00D9A3FE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0474BDD92A0A660B00D9A3FE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0474BDE22A0A660B00D9A3FE /* BuzzPop_ALPTests */ = {
+			isa = PBXGroup;
+			children = (
+				0474BDE32A0A660B00D9A3FE /* BuzzPop_ALPTests.swift */,
+			);
+			path = BuzzPop_ALPTests;
+			sourceTree = "<group>";
+		};
+		0474BDEC2A0A660B00D9A3FE /* BuzzPop_ALPUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0474BDED2A0A660B00D9A3FE /* BuzzPop_ALPUITests.swift */,
+				0474BDEF2A0A660B00D9A3FE /* BuzzPop_ALPUITestsLaunchTests.swift */,
+			);
+			path = BuzzPop_ALPUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0474BDCE2A0A660900D9A3FE /* BuzzPop_ALP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0474BDF32A0A660B00D9A3FE /* Build configuration list for PBXNativeTarget "BuzzPop_ALP" */;
+			buildPhases = (
+				0474BDCB2A0A660900D9A3FE /* Sources */,
+				0474BDCC2A0A660900D9A3FE /* Frameworks */,
+				0474BDCD2A0A660900D9A3FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BuzzPop_ALP;
+			productName = BuzzPop_ALP;
+			productReference = 0474BDCF2A0A660900D9A3FE /* BuzzPop_ALP.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0474BDDE2A0A660B00D9A3FE /* BuzzPop_ALPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0474BDF62A0A660B00D9A3FE /* Build configuration list for PBXNativeTarget "BuzzPop_ALPTests" */;
+			buildPhases = (
+				0474BDDB2A0A660B00D9A3FE /* Sources */,
+				0474BDDC2A0A660B00D9A3FE /* Frameworks */,
+				0474BDDD2A0A660B00D9A3FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0474BDE12A0A660B00D9A3FE /* PBXTargetDependency */,
+			);
+			name = BuzzPop_ALPTests;
+			productName = BuzzPop_ALPTests;
+			productReference = 0474BDDF2A0A660B00D9A3FE /* BuzzPop_ALPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0474BDE82A0A660B00D9A3FE /* BuzzPop_ALPUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0474BDF92A0A660B00D9A3FE /* Build configuration list for PBXNativeTarget "BuzzPop_ALPUITests" */;
+			buildPhases = (
+				0474BDE52A0A660B00D9A3FE /* Sources */,
+				0474BDE62A0A660B00D9A3FE /* Frameworks */,
+				0474BDE72A0A660B00D9A3FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0474BDEB2A0A660B00D9A3FE /* PBXTargetDependency */,
+			);
+			name = BuzzPop_ALPUITests;
+			productName = BuzzPop_ALPUITests;
+			productReference = 0474BDE92A0A660B00D9A3FE /* BuzzPop_ALPUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0474BDC72A0A660900D9A3FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					0474BDCE2A0A660900D9A3FE = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					0474BDDE2A0A660B00D9A3FE = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 0474BDCE2A0A660900D9A3FE;
+					};
+					0474BDE82A0A660B00D9A3FE = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 0474BDCE2A0A660900D9A3FE;
+					};
+				};
+			};
+			buildConfigurationList = 0474BDCA2A0A660900D9A3FE /* Build configuration list for PBXProject "BuzzPop_ALP" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0474BDC62A0A660900D9A3FE;
+			productRefGroup = 0474BDD02A0A660900D9A3FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0474BDCE2A0A660900D9A3FE /* BuzzPop_ALP */,
+				0474BDDE2A0A660B00D9A3FE /* BuzzPop_ALPTests */,
+				0474BDE82A0A660B00D9A3FE /* BuzzPop_ALPUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0474BDCD2A0A660900D9A3FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0474BDDA2A0A660B00D9A3FE /* Preview Assets.xcassets in Resources */,
+				0474BDD72A0A660B00D9A3FE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0474BDDD2A0A660B00D9A3FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0474BDE72A0A660B00D9A3FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0474BDCB2A0A660900D9A3FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0474BDD52A0A660900D9A3FE /* ContentView.swift in Sources */,
+				0474BDD32A0A660900D9A3FE /* BuzzPop_ALPApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0474BDDB2A0A660B00D9A3FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0474BDE42A0A660B00D9A3FE /* BuzzPop_ALPTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0474BDE52A0A660B00D9A3FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0474BDEE2A0A660B00D9A3FE /* BuzzPop_ALPUITests.swift in Sources */,
+				0474BDF02A0A660B00D9A3FE /* BuzzPop_ALPUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0474BDE12A0A660B00D9A3FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0474BDCE2A0A660900D9A3FE /* BuzzPop_ALP */;
+			targetProxy = 0474BDE02A0A660B00D9A3FE /* PBXContainerItemProxy */;
+		};
+		0474BDEB2A0A660B00D9A3FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0474BDCE2A0A660900D9A3FE /* BuzzPop_ALP */;
+			targetProxy = 0474BDEA2A0A660B00D9A3FE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0474BDF12A0A660B00D9A3FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0474BDF22A0A660B00D9A3FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0474BDF42A0A660B00D9A3FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BuzzPop_ALP/Preview Content\"";
+				DEVELOPMENT_TEAM = RSBCF2NM6N;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dylan.BuzzPop-ALP";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0474BDF52A0A660B00D9A3FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BuzzPop_ALP/Preview Content\"";
+				DEVELOPMENT_TEAM = RSBCF2NM6N;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dylan.BuzzPop-ALP";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0474BDF72A0A660B00D9A3FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RSBCF2NM6N;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dylan.BuzzPop-ALPTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BuzzPop_ALP.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BuzzPop_ALP";
+			};
+			name = Debug;
+		};
+		0474BDF82A0A660B00D9A3FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RSBCF2NM6N;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dylan.BuzzPop-ALPTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BuzzPop_ALP.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BuzzPop_ALP";
+			};
+			name = Release;
+		};
+		0474BDFA2A0A660B00D9A3FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RSBCF2NM6N;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dylan.BuzzPop-ALPUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BuzzPop_ALP;
+			};
+			name = Debug;
+		};
+		0474BDFB2A0A660B00D9A3FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RSBCF2NM6N;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dylan.BuzzPop-ALPUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BuzzPop_ALP;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0474BDCA2A0A660900D9A3FE /* Build configuration list for PBXProject "BuzzPop_ALP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0474BDF12A0A660B00D9A3FE /* Debug */,
+				0474BDF22A0A660B00D9A3FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0474BDF32A0A660B00D9A3FE /* Build configuration list for PBXNativeTarget "BuzzPop_ALP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0474BDF42A0A660B00D9A3FE /* Debug */,
+				0474BDF52A0A660B00D9A3FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0474BDF62A0A660B00D9A3FE /* Build configuration list for PBXNativeTarget "BuzzPop_ALPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0474BDF72A0A660B00D9A3FE /* Debug */,
+				0474BDF82A0A660B00D9A3FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0474BDF92A0A660B00D9A3FE /* Build configuration list for PBXNativeTarget "BuzzPop_ALPUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0474BDFA2A0A660B00D9A3FE /* Debug */,
+				0474BDFB2A0A660B00D9A3FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0474BDC72A0A660900D9A3FE /* Project object */;
+}
