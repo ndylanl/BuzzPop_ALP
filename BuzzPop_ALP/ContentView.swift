@@ -17,7 +17,7 @@ struct ContentView: View {
                     .transition(.opacity) // Add fade transition animation
                     .onAppear {
                         DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) { // Change duration time as per your requirement
-                            withAnimation(.easeOut(duration: 1.0)) {
+                            withAnimation(.easeOut(duration: 1.5)) {
                                 self.isSplashScreenShown = false
                             }
                         }

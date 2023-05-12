@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0418401E2A0DC7E3005A02F7 /* ProfileSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418401B2A0DC7E3005A02F7 /* ProfileSummary.swift */; };
+		0418401F2A0DC7E3005A02F7 /* ProfileEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418401C2A0DC7E3005A02F7 /* ProfileEditor.swift */; };
+		041840202A0DC7E3005A02F7 /* ProfileHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418401D2A0DC7E3005A02F7 /* ProfileHost.swift */; };
 		0474BDD32A0A660900D9A3FE /* BuzzPop_ALPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474BDD22A0A660900D9A3FE /* BuzzPop_ALPApp.swift */; };
 		0474BDD52A0A660900D9A3FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474BDD42A0A660900D9A3FE /* ContentView.swift */; };
 		0474BDD72A0A660B00D9A3FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0474BDD62A0A660B00D9A3FE /* Assets.xcassets */; };
@@ -42,6 +45,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0418401B2A0DC7E3005A02F7 /* ProfileSummary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileSummary.swift; sourceTree = "<group>"; };
+		0418401C2A0DC7E3005A02F7 /* ProfileEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileEditor.swift; sourceTree = "<group>"; };
+		0418401D2A0DC7E3005A02F7 /* ProfileHost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileHost.swift; sourceTree = "<group>"; };
+		041840212A0DDF54005A02F7 /* BuzzPop-ALP-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "BuzzPop-ALP-Info.plist"; sourceTree = SOURCE_ROOT; };
 		0474BDCF2A0A660900D9A3FE /* BuzzPop_ALP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuzzPop_ALP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0474BDD22A0A660900D9A3FE /* BuzzPop_ALPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuzzPop_ALPApp.swift; sourceTree = "<group>"; };
 		0474BDD42A0A660900D9A3FE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -87,6 +94,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0418401A2A0DC7E3005A02F7 /* Profiles */ = {
+			isa = PBXGroup;
+			children = (
+				0418401B2A0DC7E3005A02F7 /* ProfileSummary.swift */,
+				0418401C2A0DC7E3005A02F7 /* ProfileEditor.swift */,
+				0418401D2A0DC7E3005A02F7 /* ProfileHost.swift */,
+			);
+			path = Profiles;
+			sourceTree = "<group>";
+		};
+		041840222A0DE03E005A02F7 /* Leaderboard */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Leaderboard;
+			sourceTree = "<group>";
+		};
 		0474BDC62A0A660900D9A3FE = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +134,7 @@
 		0474BDD12A0A660900D9A3FE /* BuzzPop_ALP */ = {
 			isa = PBXGroup;
 			children = (
+				041840212A0DDF54005A02F7 /* BuzzPop-ALP-Info.plist */,
 				0474BE062A0A722400D9A3FE /* View */,
 				0474BDFC2A0A69C300D9A3FE /* Model */,
 				0474BDD22A0A660900D9A3FE /* BuzzPop_ALPApp.swift */,
@@ -160,6 +185,8 @@
 		0474BE062A0A722400D9A3FE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				041840222A0DE03E005A02F7 /* Leaderboard */,
+				0418401A2A0DC7E3005A02F7 /* Profiles */,
 				0474BE092A0A724C00D9A3FE /* Game */,
 			);
 			path = View;
@@ -307,14 +334,17 @@
 			files = (
 				0474BE0D2A0A730B00D9A3FE /* SplashScreen.swift in Sources */,
 				0474BE112A0A804C00D9A3FE /* MainGameView.swift in Sources */,
+				0418401F2A0DC7E3005A02F7 /* ProfileEditor.swift in Sources */,
 				0474BE002A0A6C8A00D9A3FE /* User.swift in Sources */,
 				0474BE042A0A6CAD00D9A3FE /* Leaderboard.swift in Sources */,
+				041840202A0DC7E3005A02F7 /* ProfileHost.swift in Sources */,
 				0474BE022A0A6C9F00D9A3FE /* Game.swift in Sources */,
 				0474BDD52A0A660900D9A3FE /* ContentView.swift in Sources */,
 				0474BDD32A0A660900D9A3FE /* BuzzPop_ALPApp.swift in Sources */,
 				0474BDFE2A0A6C8000D9A3FE /* Music.swift in Sources */,
 				0474BE132A0A805B00D9A3FE /* GameControlView.swift in Sources */,
 				0474BE0B2A0A726700D9A3FE /* GameView.swift in Sources */,
+				0418401E2A0DC7E3005A02F7 /* ProfileSummary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,9 +506,9 @@
 				DEVELOPMENT_TEAM = RSBCF2NM6N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "BuzzPop-ALP-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -505,9 +535,9 @@
 				DEVELOPMENT_TEAM = RSBCF2NM6N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "BuzzPop-ALP-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
