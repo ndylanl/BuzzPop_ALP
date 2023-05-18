@@ -13,6 +13,9 @@
 		041840242A0DE0E8005A02F7 /* GuessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041840232A0DE0E8005A02F7 /* GuessView.swift */; };
 		041840262A0DE11D005A02F7 /* ResultItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041840252A0DE11D005A02F7 /* ResultItem.swift */; };
 		041840282A0DE128005A02F7 /* ResultList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041840272A0DE128005A02F7 /* ResultList.swift */; };
+		0462879E2A1626FC005EBDB1 /* Franz Ferdinand - This Fire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0462879D2A1626FC005EBDB1 /* Franz Ferdinand - This Fire.mp3 */; };
+		046287A12A1627AB005EBDB1 /* Joji.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 046287A02A1627AB005EBDB1 /* Joji.mp3 */; };
+		046287A32A1627B6005EBDB1 /* Tame Impala - The Less I Know The Better.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 046287A22A1627B6005EBDB1 /* Tame Impala - The Less I Know The Better.mp3 */; };
 		0474BDD32A0A660900D9A3FE /* BuzzPop_ALPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474BDD22A0A660900D9A3FE /* BuzzPop_ALPApp.swift */; };
 		0474BDD52A0A660900D9A3FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474BDD42A0A660900D9A3FE /* ContentView.swift */; };
 		0474BDD72A0A660B00D9A3FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0474BDD62A0A660B00D9A3FE /* Assets.xcassets */; };
@@ -55,6 +58,9 @@
 		041840232A0DE0E8005A02F7 /* GuessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessView.swift; sourceTree = "<group>"; };
 		041840252A0DE11D005A02F7 /* ResultItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultItem.swift; sourceTree = "<group>"; };
 		041840272A0DE128005A02F7 /* ResultList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultList.swift; sourceTree = "<group>"; };
+		0462879D2A1626FC005EBDB1 /* Franz Ferdinand - This Fire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Franz Ferdinand - This Fire.mp3"; sourceTree = "<group>"; };
+		046287A02A1627AB005EBDB1 /* Joji.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Joji.mp3; sourceTree = "<group>"; };
+		046287A22A1627B6005EBDB1 /* Tame Impala - The Less I Know The Better.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Tame Impala - The Less I Know The Better.mp3"; sourceTree = "<group>"; };
 		0474BDCF2A0A660900D9A3FE /* BuzzPop_ALP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuzzPop_ALP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0474BDD22A0A660900D9A3FE /* BuzzPop_ALPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuzzPop_ALPApp.swift; sourceTree = "<group>"; };
 		0474BDD42A0A660900D9A3FE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -117,6 +123,16 @@
 			path = Leaderboard;
 			sourceTree = "<group>";
 		};
+		0462879F2A16270E005EBDB1 /* MusicFiles */ = {
+			isa = PBXGroup;
+			children = (
+				0462879D2A1626FC005EBDB1 /* Franz Ferdinand - This Fire.mp3 */,
+				046287A02A1627AB005EBDB1 /* Joji.mp3 */,
+				046287A22A1627B6005EBDB1 /* Tame Impala - The Less I Know The Better.mp3 */,
+			);
+			path = MusicFiles;
+			sourceTree = "<group>";
+		};
 		0474BDC62A0A660900D9A3FE = {
 			isa = PBXGroup;
 			children = (
@@ -141,8 +157,9 @@
 			isa = PBXGroup;
 			children = (
 				041840212A0DDF54005A02F7 /* BuzzPop-ALP-Info.plist */,
-				0474BE062A0A722400D9A3FE /* View */,
+				0462879F2A16270E005EBDB1 /* MusicFiles */,
 				0474BDFC2A0A69C300D9A3FE /* Model */,
+				0474BE062A0A722400D9A3FE /* View */,
 				0474BDD22A0A660900D9A3FE /* BuzzPop_ALPApp.swift */,
 				0474BDD42A0A660900D9A3FE /* ContentView.swift */,
 				0474BE0C2A0A730B00D9A3FE /* SplashScreen.swift */,
@@ -315,8 +332,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0462879E2A1626FC005EBDB1 /* Franz Ferdinand - This Fire.mp3 in Resources */,
+				046287A32A1627B6005EBDB1 /* Tame Impala - The Less I Know The Better.mp3 in Resources */,
 				0474BDDA2A0A660B00D9A3FE /* Preview Assets.xcassets in Resources */,
 				0474BDD72A0A660B00D9A3FE /* Assets.xcassets in Resources */,
+				046287A12A1627AB005EBDB1 /* Joji.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

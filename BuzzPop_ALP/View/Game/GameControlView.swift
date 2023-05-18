@@ -9,8 +9,32 @@ import SwiftUI
 
 struct GameControlView: View {
     @State var searchText: String
+    @State private var isPlaying = false
+    @ObservedObject var viewModel: Game
     var body: some View {
         VStack{
+            HStack{
+                Text(viewModel.formatTime(viewModel.audioPlayer?.currentTime ?? 0.0))
+                Spacer()
+                Button(action: {
+                    withAnimation {
+                        isPlaying.toggle()
+                    }
+                    viewModel.playMusic()
+
+                }) {
+                    Image(systemName: isPlaying ? "pause.circle.fill" : "play.circle.fill")
+                        .font(.system(size: 80))
+                        .foregroundColor(.green)
+                        .background(Color.white.opacity(0.98))
+                        .cornerRadius(200)
+                }
+                .buttonStyle(PlainButtonStyle())
+                Spacer()
+                Text(viewModel.formatTime(TimeInterval(viewModel.duration)))
+            }
+            .padding([.leading, .trailing])
+            .padding([.leading, .trailing])
             HStack {
                 Image(systemName: "magnifyingglass")
                     .foregroundColor(.gray)
@@ -33,10 +57,19 @@ struct GameControlView: View {
             .padding()
             
             HStack{
-                Text("Skip(+1s)")
+                Button(action: {
+                    viewModel.increaseDuration(amount: 5)
+                }) {
+                    Text("Skip(+5s)")
+                }
                 Spacer()
-                Text("Submit")
+                Button(action: {
+                    viewModel.guessAnswer()
+                }) {
+                    Text("Submit")
+                }
             }
+            .padding([.leading, .trailing])
             .padding([.leading, .trailing])
 
             
@@ -47,8 +80,3 @@ struct GameControlView: View {
     }
 }
 
-struct GameControlView_Previews: PreviewProvider {
-    static var previews: some View {
-        GameControlView(searchText: "")
-    }
-}

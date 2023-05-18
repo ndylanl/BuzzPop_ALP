@@ -6,14 +6,19 @@
 //
 
 import SwiftUI
+import AVFoundation
+
 
 struct GameView: View {
+    @StateObject private var viewModel = Game()
+
+
     var body: some View {
         VStack(){
             MainGameView()
             Spacer()
             Divider().background(Color.white)
-            GameControlView(searchText: "")
+            GameControlView(searchText: "", viewModel: viewModel)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.init(red: 20/255, green: 25/255, blue: 35/255, opacity: 0.99))
