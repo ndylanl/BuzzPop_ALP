@@ -102,9 +102,11 @@ class Game: NSObject, ObservableObject {
         }
 
         // Check if the player has passed 5 seconds of play time
-        if audioPlayer.currentTime >= 5.0 {
+        if audioPlayer.currentTime >= Double(duration) {
             audioPlayer.pause() // Pause the audio playback
+            audioPlayer.currentTime = 0.0
             timer?.invalidate() // Stop the timer
+            isPlaying = false
         }
 
         updateCurrentTime()

@@ -22,6 +22,14 @@ struct GameView: View {
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.init(red: 20/255, green: 25/255, blue: 35/255, opacity: 0.99))
+        .onAppear {
+            // Start updating the current time when the view appears
+            viewModel.startUpdatingCurrentTime()
+        }
+        .onDisappear {
+            // Stop updating the current time when the view disappears
+            viewModel.stopUpdatingCurrentTime()
+        }
     }
 }
 

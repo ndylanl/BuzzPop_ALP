@@ -9,7 +9,6 @@ import SwiftUI
 
 struct GameControlView: View {
     @State var searchText: String
-    @State private var isPlaying = false
     @ObservedObject var viewModel: Game
     var body: some View {
         VStack{
@@ -18,12 +17,12 @@ struct GameControlView: View {
                 Spacer()
                 Button(action: {
                     withAnimation {
-                        isPlaying.toggle()
+//                        isPlaying.toggle()
                     }
                     viewModel.playMusic()
 
                 }) {
-                    Image(systemName: isPlaying ? "pause.circle.fill" : "play.circle.fill")
+                    Image(systemName: viewModel.isPlaying ? "pause.circle.fill" : "play.circle.fill")
                         .font(.system(size: 80))
                         .foregroundColor(.green)
                         .background(Color.white.opacity(0.98))
