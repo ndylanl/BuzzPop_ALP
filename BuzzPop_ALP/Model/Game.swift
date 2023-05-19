@@ -42,6 +42,34 @@ class Game: NSObject, ObservableObject {
         
     }
     
+    func nextMusic(){
+        audioPlayer?.pause()
+        isPlaying = false
+        let id_music: Int = listMusic.firstIndex(where: {$0 == curMusic}) ?? 0
+        if id_music == listMusic.count-1{
+            curMusic = listMusic[0]
+        }else{
+            curMusic = listMusic[id_music + 1]
+        }
+        print(" music: \(id_music)")
+        guard let songURL = Bundle.main.url(forResource: curMusic.url, withExtension: "mp3") else {
+            print(curMusic.url)
+            return}
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: songURL)
+            audioPlayer?.prepareToPlay()
+
+            // Start a timer to check the current time every second
+            timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { [weak self] _ in
+                self?.checkPlaybackTime()
+            }
+
+            RunLoop.current.add(timer!, forMode: .common) // Add the timer to the current run loop
+        } catch {
+            print("Failed to play the audio: \(error.localizedDescription)")
+        }
+    }
+    
     func initializeMusic(){
         listMusic.shuffle()
         curMusic = listMusic[0]
@@ -53,7 +81,7 @@ class Game: NSObject, ObservableObject {
             isPlaying = false
         }else{
             isPlaying = true
-            if(audioPlayer == nil){
+            if(audioPlayer == nil ){
                 // Initialize the audio player with the song's URL
                 guard let songURL = Bundle.main.url(forResource: curMusic.url, withExtension: "mp3") else {
                     print(curMusic.url)
@@ -96,7 +124,6 @@ class Game: NSObject, ObservableObject {
     }
     
     private func checkPlaybackTime() {
-        print("bangsat")
         guard let audioPlayer = audioPlayer else {
             return
         }

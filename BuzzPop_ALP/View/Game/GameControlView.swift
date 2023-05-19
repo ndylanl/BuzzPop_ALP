@@ -63,7 +63,8 @@ struct GameControlView: View {
                 }
                 Spacer()
                 Button(action: {
-                    viewModel.guessAnswer()
+//                    viewModel.guessAnswer()
+                    viewModel.nextMusic()
                 }) {
                     Text("Submit")
                 }
