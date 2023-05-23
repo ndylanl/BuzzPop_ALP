@@ -16,6 +16,8 @@ class Game: NSObject, ObservableObject {
     @Published var audioPlayer: AVAudioPlayer?
     @Published var isPlaying = false
     @Published var curTime = "00:00"
+    @Published var guessCount = 0
+    @Published var guesses: [String] = []
     private var timer: Timer?
 
     
@@ -38,8 +40,22 @@ class Game: NSObject, ObservableObject {
         user.score += pointsAwarded
     }
     
-    func guessAnswer(){
-        
+    func guessAnswer(guess: String) -> Int{
+        if(guess.lowercased() == curMusic.title.lowercased()){
+            nextMusic()
+            guesses.removeAll()
+            guessCount = 0
+            return pointsAwarded
+        }else{
+            guessCount += 1
+            guesses.append(guess)
+            if(guessCount >= 5){
+                nextMusic()
+                guesses.removeAll()
+                guessCount = 0
+            }
+            return 0
+        }
     }
     
     func nextMusic(){
@@ -51,7 +67,6 @@ class Game: NSObject, ObservableObject {
         }else{
             curMusic = listMusic[id_music + 1]
         }
-        print(" music: \(id_music)")
         guard let songURL = Bundle.main.url(forResource: curMusic.url, withExtension: "mp3") else {
             print(curMusic.url)
             return}
