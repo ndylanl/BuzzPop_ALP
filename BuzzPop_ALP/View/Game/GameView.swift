@@ -12,14 +12,16 @@ import AVFoundation
 struct GameView: View {
     @StateObject private var viewModel = Game()
     @State private var filteredSongTitles: [String] = []
+    @State private var Focused = false
+    @State private var searchText = ""
 
 
     var body: some View {
         VStack(){
-            MainGameView()
+            MainGameView(Focused: $Focused, viewModel: viewModel, searchText: $searchText)
             Spacer()
             Divider().background(Color.white)
-            GameControlView(searchText: "", viewModel: viewModel)
+            GameControlView(searchText: $searchText, viewModel: viewModel, Focused: $Focused)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.init(red: 20/255, green: 25/255, blue: 35/255, opacity: 0.99))

@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct GameControlView: View {
-    @State var searchText: String
+    @Binding var searchText: String
     @ObservedObject var viewModel: Game
     @FocusState private var isSearchBoxFocused: Bool
+    @Binding var Focused: Bool
     
     var body: some View {
         VStack{
@@ -36,18 +37,6 @@ struct GameControlView: View {
             }
             .padding([.leading, .trailing])
             .padding([.leading, .trailing])
-            if isSearchBoxFocused {
-                List(viewModel.filteredSongTitles, id: \.self) { songTitle in
-                Button(action: {
-                    searchText = songTitle.title
-                    isSearchBoxFocused = false
-                }) {
-                    Text(songTitle.title)
-                }
-            }
-            .listStyle(.plain)
-            .frame(height: 70)
-            }
             HStack {
                 Image(systemName: "magnifyingglass")
                     .foregroundColor(.gray)
@@ -70,6 +59,16 @@ struct GameControlView: View {
                     .stroke(Color.white, lineWidth: 1)
             )
             .padding()
+            .onChange(of: isSearchBoxFocused) { focused in
+                if focused {
+                    Focused = true
+                } else {
+                    Focused = false
+                }
+            }
+            .onChange(of: searchText) { newValue in
+                viewModel.updateFilteredSongTitles(guess: searchText)
+            }
             
             HStack{
                 Button(action: {
@@ -79,8 +78,8 @@ struct GameControlView: View {
                 }
                 Spacer()
                 Button(action: {
-//                    viewModel.guessAnswer()
-                    viewModel.nextMusic()
+                    viewModel.guessAnswer(guess: searchText)
+                    //viewModel.nextMusic()
                 }) {
                     Text("Submit")
                 }
