@@ -11,6 +11,7 @@ import AVFoundation
 
 struct GameView: View {
     @StateObject private var viewModel = Game()
+    @State private var filteredSongTitles: [String] = []
 
 
     var body: some View {

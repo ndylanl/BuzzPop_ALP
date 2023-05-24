@@ -16,6 +16,7 @@ class Game: NSObject, ObservableObject {
     @Published var audioPlayer: AVAudioPlayer?
     @Published var isPlaying = false
     @Published var curTime = "00:00"
+    @Published var filteredSongTitles: [Music] = []
     private var timer: Timer?
 
     
@@ -38,8 +39,14 @@ class Game: NSObject, ObservableObject {
         user.score += pointsAwarded
     }
     
-    func guessAnswer(){
+    func guessAnswer(guess: String){
         
+    }
+    
+    func updateFilteredSongTitles(guess: String) {
+        filteredSongTitles = listMusic.filter {
+            $0.title.lowercased().contains(guess.lowercased())
+        }
     }
     
     func nextMusic(){

@@ -10,6 +10,8 @@ import SwiftUI
 struct GameControlView: View {
     @State var searchText: String
     @ObservedObject var viewModel: Game
+    @FocusState private var isSearchBoxFocused: Bool
+    
     var body: some View {
         VStack{
             HStack{
@@ -34,15 +36,29 @@ struct GameControlView: View {
             }
             .padding([.leading, .trailing])
             .padding([.leading, .trailing])
+            if isSearchBoxFocused {
+                List(viewModel.filteredSongTitles, id: \.self) { songTitle in
+                Button(action: {
+                    searchText = songTitle.title
+                    isSearchBoxFocused = false
+                }) {
+                    Text(songTitle.title)
+                }
+            }
+            .listStyle(.plain)
+            .frame(height: 70)
+            }
             HStack {
                 Image(systemName: "magnifyingglass")
                     .foregroundColor(.gray)
                 TextField("Search", text: $searchText)
-                    if !searchText.isEmpty {
-                        Button(action: {
-                            self.searchText = ""
-                        }) {
-                        Image(systemName: "xmark.circle.fill")
+                    .focused($isSearchBoxFocused)
+                if !searchText.isEmpty {
+                    Button(action: {
+                        self.searchText = ""
+                        //viewModel.guessAnswer(guess:searchText)
+                    }) {
+                    Image(systemName: "xmark.circle.fill")
                         .foregroundColor(.gray)
                     }
                 }

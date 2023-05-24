@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Music: Equatable {
+struct Music: Equatable, Hashable {
     var url: String
     var title: String
     var artist: String
