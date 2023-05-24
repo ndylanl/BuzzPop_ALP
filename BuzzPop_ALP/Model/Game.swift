@@ -57,8 +57,6 @@ class Game: NSObject, ObservableObject {
             }
             return 0
         }
-    func guessAnswer(guess: String){
-        
     }
     
     func updateFilteredSongTitles(guess: String) {
