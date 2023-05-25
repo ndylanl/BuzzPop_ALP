@@ -10,8 +10,6 @@
 		0418401E2A0DC7E3005A02F7 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418401B2A0DC7E3005A02F7 /* ProfileView.swift */; };
 		0418401F2A0DC7E3005A02F7 /* ProfileEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418401C2A0DC7E3005A02F7 /* ProfileEditor.swift */; };
 		041840202A0DC7E3005A02F7 /* ProfileHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418401D2A0DC7E3005A02F7 /* ProfileHost.swift */; };
-		041840242A0DE0E8005A02F7 /* GuessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041840232A0DE0E8005A02F7 /* GuessView.swift */; };
-		041840262A0DE11D005A02F7 /* ResultItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041840252A0DE11D005A02F7 /* ResultItem.swift */; };
 		041840282A0DE128005A02F7 /* ResultList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041840272A0DE128005A02F7 /* ResultList.swift */; };
 		0462879E2A1626FC005EBDB1 /* Franz Ferdinand - This Fire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0462879D2A1626FC005EBDB1 /* Franz Ferdinand - This Fire.mp3 */; };
 		046287A12A1627AB005EBDB1 /* Joji.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 046287A02A1627AB005EBDB1 /* Joji.mp3 */; };
@@ -58,8 +56,6 @@
 		0418401C2A0DC7E3005A02F7 /* ProfileEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileEditor.swift; sourceTree = "<group>"; };
 		0418401D2A0DC7E3005A02F7 /* ProfileHost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileHost.swift; sourceTree = "<group>"; };
 		041840212A0DDF54005A02F7 /* BuzzPop-ALP-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "BuzzPop-ALP-Info.plist"; sourceTree = SOURCE_ROOT; };
-		041840232A0DE0E8005A02F7 /* GuessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessView.swift; sourceTree = "<group>"; };
-		041840252A0DE11D005A02F7 /* ResultItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultItem.swift; sourceTree = "<group>"; };
 		041840272A0DE128005A02F7 /* ResultList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultList.swift; sourceTree = "<group>"; };
 		0462879D2A1626FC005EBDB1 /* Franz Ferdinand - This Fire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Franz Ferdinand - This Fire.mp3"; sourceTree = "<group>"; };
 		046287A02A1627AB005EBDB1 /* Joji.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Joji.mp3; sourceTree = "<group>"; };
@@ -222,8 +218,6 @@
 				0474BE0A2A0A726700D9A3FE /* GameView.swift */,
 				0474BE102A0A804C00D9A3FE /* MainGameView.swift */,
 				0474BE122A0A805B00D9A3FE /* GameControlView.swift */,
-				041840232A0DE0E8005A02F7 /* GuessView.swift */,
-				041840252A0DE11D005A02F7 /* ResultItem.swift */,
 				041840272A0DE128005A02F7 /* ResultList.swift */,
 			);
 			path = Game;
@@ -374,11 +368,9 @@
 			files = (
 				42A426132A1C3FD200884FE7 /* History.swift in Sources */,
 				0474BE0D2A0A730B00D9A3FE /* SplashScreen.swift in Sources */,
-				041840262A0DE11D005A02F7 /* ResultItem.swift in Sources */,
 				0474BE112A0A804C00D9A3FE /* MainGameView.swift in Sources */,
 				0418401F2A0DC7E3005A02F7 /* ProfileEditor.swift in Sources */,
 				0474BE002A0A6C8A00D9A3FE /* User.swift in Sources */,
-				041840242A0DE0E8005A02F7 /* GuessView.swift in Sources */,
 				041840282A0DE128005A02F7 /* ResultList.swift in Sources */,
 				041840202A0DC7E3005A02F7 /* ProfileHost.swift in Sources */,
 				0474BE022A0A6C9F00D9A3FE /* Game.swift in Sources */,

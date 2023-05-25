@@ -15,14 +15,34 @@ struct MainGameView: View {
     var body: some View {
         ZStack{
             VStack{
-                Spacer()
                 Text(String(viewModel.curPoints))
                     .foregroundColor(Color.white)
-                List(viewModel.guesses, id: \.self) { songTitle in
-                    Text(songTitle)
+//                List(viewModel.guesses, id: \.self) { songTitle in
+//                    Text(songTitle)
+//                        .background(Color.clear)
+//                }
+//                .padding([.leading, .trailing])
+//                .padding([.leading, .trailing])
+                Spacer()
+                ForEach(viewModel.guesses, id: \.self){guess in
+                    HStack {
+                        Image(systemName: "xmark.app")
+                            .foregroundColor(.red)
+                        Text(guess)
+                            .foregroundColor(Color.white)
+                            .padding(.leading)
+                        Spacer()
+                    }
+                    .cornerRadius(10)
+                    .frame(maxWidth: .infinity)
+                    .padding()
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 16)
+                            .stroke(Color.white, lineWidth: 1)
+                    )
+                    .padding([.leading, .trailing])
+
                 }
-                .padding([.leading, .trailing])
-                .padding([.leading, .trailing])
                 Spacer()
                 if Focused {
                     List(viewModel.filteredSongTitles, id: \.self) { songTitle in
@@ -37,6 +57,5 @@ struct MainGameView: View {
                 }
             }
         }
-        .background(Color.init(red: 20/255, green: 25/255, blue: 35/255, opacity: 0.99))
     }
 }

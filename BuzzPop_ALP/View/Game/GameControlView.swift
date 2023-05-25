@@ -45,7 +45,6 @@ struct GameControlView: View {
                 if !searchText.isEmpty {
                     Button(action: {
                         self.searchText = ""
-                        //viewModel.guessAnswer(guess:searchText)
                     }) {
                     Image(systemName: "xmark.circle.fill")
                         .foregroundColor(.gray)
@@ -79,7 +78,7 @@ struct GameControlView: View {
                 Spacer()
                 Button(action: {
                     viewModel.guessAnswer(guess: searchText)
-                    //viewModel.nextMusic()
+                    searchText = ""
                 }) {
                     Text("Submit")
                 }

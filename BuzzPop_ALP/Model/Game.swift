@@ -45,6 +45,9 @@ class Game: NSObject, ObservableObject {
     }
     
     func guessAnswer(guess: String){
+        if(guess.isEmpty){
+            return
+        }
         if(guess.lowercased() == curMusic.title.lowercased()){
             nextMusic()
             guesses.removeAll()
