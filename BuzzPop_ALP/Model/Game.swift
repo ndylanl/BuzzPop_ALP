@@ -28,6 +28,8 @@ class Game: NSObject, ObservableObject {
             Music(url: "Joji", title: "Slow Dancing In The Dark", artist: "Joji"),
             Music(url: "Tame Impala - The Less I Know The Better", title: "The Less I Know The Better", artist: "Tame Impala"),
             Music(url: "Franz Ferdinand - This Fire", title: "This Fire", artist: "Franz Ferdinand"),
+            Music(url: "ZICO - Any Song", title: "Any Song", artist: "ZICO"),
+            Music(url: "YOASOBI - Racing Into The Night", title: "Racing Into The Night", artist: "YOASOBI"),
         ]
         curMusic = Music(url: "Tame Impala - The Less I Know The Better.mp3", title: "The Less I Know The Better", artist: "Tame Impala")
         super.init()

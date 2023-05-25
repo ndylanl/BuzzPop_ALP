@@ -15,13 +15,14 @@ struct MainGameView: View {
     var body: some View {
         ZStack{
             VStack{
+                Spacer()
                 Text(String(viewModel.curPoints))
                     .foregroundColor(Color.white)
                 List(viewModel.guesses, id: \.self) { songTitle in
                     Text(songTitle)
                 }
-                .padding()
-                .padding()
+                .padding([.leading, .trailing])
+                .padding([.leading, .trailing])
                 Spacer()
                 if Focused {
                     List(viewModel.filteredSongTitles, id: \.self) { songTitle in
