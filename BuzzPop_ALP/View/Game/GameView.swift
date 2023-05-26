@@ -22,6 +22,8 @@ struct GameView: View {
             Spacer()
             Divider().background(Color.white)
             GameControlView(searchText: $searchText, viewModel: viewModel, Focused: $Focused)
+                .padding(.bottom)
+                .padding(.bottom)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.init(red: 20/255, green: 25/255, blue: 35/255, opacity: 0.99))
