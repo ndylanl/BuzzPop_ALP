@@ -12,8 +12,6 @@ import SwiftUI
 
 struct ProfileHost: View {
     @ObservedObject var user = User(ID: 123, username: "John", password: "password", score: 100, notification: true)
-    @State  var noedit = User(ID: 123, username: "John", password: "password", score: 100, notification: true)
-    
     @State private var showingEdit = false
        
        var body: some View {
