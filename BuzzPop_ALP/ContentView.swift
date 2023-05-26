@@ -8,25 +8,43 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var isSplashScreenShown = true
-
+    @State var bool = false
+    
+    @State private var selection: Tab = .history
+    
+    enum Tab {
+        case game
+        case history
+        case profile
+    }
+    
+    init() {
+        UITabBar.appearance().backgroundColor = UIColor(red: 20/255, green: 25/255, blue: 35/255, alpha: 0.99)
+        UITabBar.appearance().barTintColor = UIColor.gray
+        }
+    
     var body: some View {
-//        Group {
-//            if isSplashScreenShown {
-//                SplashScreen()
-//                    .transition(.opacity) // Add fade transition animation
-//                    .onAppear {
-//                        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) { // Change duration time as per your requirement
-//                            withAnimation(.easeOut(duration: 1.5)) {
-//                                self.isSplashScreenShown = false
-//                            }
-//                        }
-//                    }
-//            } else {
-//                GameView()
-//            }
-//        }
-        GameView()
+        
+            TabView(selection: $selection) {
+                GameView()
+                    .tabItem {
+                        Label("Game", systemImage: "gamecontroller")
+                    }
+                    .tag(Tab.game)
+                
+                HistoryView()
+                    .tabItem {
+                        Label("History", systemImage: "clock.arrow.circlepath")
+                    }
+                    .tag(Tab.history)
+                
+                ProfileView(user: User(ID: 1, username: "Reef", password: "reef123", score: 100, notification: true), showingEdit: $bool)
+                    .tabItem{
+                        Label("Profile", systemImage: "person")
+                    }
+                    .tag(Tab.profile)
+            }
+            .accentColor(.green)
     }
 }
 
