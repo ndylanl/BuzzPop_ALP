@@ -42,6 +42,7 @@
 		04F8A53C2A1F0B1600ED8E50 /* ZICO - Any Song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04F8A53B2A1F0B1500ED8E50 /* ZICO - Any Song.mp3 */; };
 		42A426132A1C3FD200884FE7 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A426122A1C3FD200884FE7 /* History.swift */; };
 		42A426162A1C971B00884FE7 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A426152A1C971B00884FE7 /* HistoryView.swift */; };
+		42A4261D2A204B2F00884FE7 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 42A4261C2A204B2F00884FE7 /* SwiftUICharts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42A4261D2A204B2F00884FE7 /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +321,9 @@
 			dependencies = (
 			);
 			name = BuzzPop_ALP;
+			packageProductDependencies = (
+				42A4261C2A204B2F00884FE7 /* SwiftUICharts */,
+			);
 			productName = BuzzPop_ALP;
 			productReference = 0474BDCF2A0A660900D9A3FE /* BuzzPop_ALP.app */;
 			productType = "com.apple.product-type.application";
@@ -394,6 +399,9 @@
 				Base,
 			);
 			mainGroup = 0474BDC62A0A660900D9A3FE;
+			packageReferences = (
+				42A4261B2A204B2F00884FE7 /* XCRemoteSwiftPackageReference "ChartView" */,
+			);
 			productRefGroup = 0474BDD02A0A660900D9A3FE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -878,6 +886,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		42A4261B2A204B2F00884FE7 /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		42A4261C2A204B2F00884FE7 /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42A4261B2A204B2F00884FE7 /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0474BDC72A0A660900D9A3FE /* Project object */;
 }

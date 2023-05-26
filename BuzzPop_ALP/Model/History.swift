@@ -7,12 +7,12 @@
 
 import Foundation
 
-class History{
+class History: ObservableObject{
     @Published var score: [Int]
     
     init() {
         self.score = [
-        123753, 138592, 284123, 193012, 19301, 25817, 124893, 195204, 120478, 816491
+        300, 180, 230, 400, 500, 120, 250, 120
         ]
     }
     
