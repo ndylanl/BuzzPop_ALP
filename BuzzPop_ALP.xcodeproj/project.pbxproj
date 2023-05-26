@@ -11,6 +11,16 @@
 		0418401F2A0DC7E3005A02F7 /* ProfileEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418401C2A0DC7E3005A02F7 /* ProfileEditor.swift */; };
 		041840202A0DC7E3005A02F7 /* ProfileHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418401D2A0DC7E3005A02F7 /* ProfileHost.swift */; };
 		041840282A0DE128005A02F7 /* ResultList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041840272A0DE128005A02F7 /* ResultList.swift */; };
+		042916392A1FAFAD003E00A0 /* BuzzPopMacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042916382A1FAFAD003E00A0 /* BuzzPopMacApp.swift */; };
+		0429163B2A1FAFAD003E00A0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0429163A2A1FAFAD003E00A0 /* ContentView.swift */; };
+		0429163D2A1FAFAF003E00A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0429163C2A1FAFAF003E00A0 /* Assets.xcassets */; };
+		042916402A1FAFAF003E00A0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0429163F2A1FAFAF003E00A0 /* Preview Assets.xcassets */; };
+		042916452A1FB830003E00A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0474BDD62A0A660B00D9A3FE /* Assets.xcassets */; };
+		042916492A1FBA3B003E00A0 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474BDFD2A0A6C8000D9A3FE /* Music.swift */; };
+		0429164A2A1FBA3B003E00A0 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474BE012A0A6C9F00D9A3FE /* Game.swift */; };
+		0429164B2A1FBA3B003E00A0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474BDFF2A0A6C8A00D9A3FE /* User.swift */; };
+		0429164C2A1FBA3B003E00A0 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A426122A1C3FD200884FE7 /* History.swift */; };
+		0429164F2A1FC922003E00A0 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0429164E2A1FC922003E00A0 /* ProfileView.swift */; };
 		0462879E2A1626FC005EBDB1 /* Franz Ferdinand - This Fire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0462879D2A1626FC005EBDB1 /* Franz Ferdinand - This Fire.mp3 */; };
 		046287A12A1627AB005EBDB1 /* Joji.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 046287A02A1627AB005EBDB1 /* Joji.mp3 */; };
 		046287A32A1627B6005EBDB1 /* Tame Impala - The Less I Know The Better.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 046287A22A1627B6005EBDB1 /* Tame Impala - The Less I Know The Better.mp3 */; };
@@ -57,6 +67,13 @@
 		0418401D2A0DC7E3005A02F7 /* ProfileHost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileHost.swift; sourceTree = "<group>"; };
 		041840212A0DDF54005A02F7 /* BuzzPop-ALP-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "BuzzPop-ALP-Info.plist"; sourceTree = SOURCE_ROOT; };
 		041840272A0DE128005A02F7 /* ResultList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultList.swift; sourceTree = "<group>"; };
+		042916362A1FAFAD003E00A0 /* BuzzPopMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuzzPopMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		042916382A1FAFAD003E00A0 /* BuzzPopMacApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuzzPopMacApp.swift; sourceTree = "<group>"; };
+		0429163A2A1FAFAD003E00A0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0429163C2A1FAFAF003E00A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0429163F2A1FAFAF003E00A0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		042916412A1FAFAF003E00A0 /* BuzzPopMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BuzzPopMac.entitlements; sourceTree = "<group>"; };
+		0429164E2A1FC922003E00A0 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		0462879D2A1626FC005EBDB1 /* Franz Ferdinand - This Fire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Franz Ferdinand - This Fire.mp3"; sourceTree = "<group>"; };
 		046287A02A1627AB005EBDB1 /* Joji.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Joji.mp3; sourceTree = "<group>"; };
 		046287A22A1627B6005EBDB1 /* Tame Impala - The Less I Know The Better.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Tame Impala - The Less I Know The Better.mp3"; sourceTree = "<group>"; };
@@ -84,6 +101,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		042916332A1FAFAD003E00A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0474BDCC2A0A660900D9A3FE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -118,6 +142,35 @@
 			path = Profiles;
 			sourceTree = "<group>";
 		};
+		042916372A1FAFAD003E00A0 /* BuzzPopMac */ = {
+			isa = PBXGroup;
+			children = (
+				042916382A1FAFAD003E00A0 /* BuzzPopMacApp.swift */,
+				0429163A2A1FAFAD003E00A0 /* ContentView.swift */,
+				0429164D2A1FC910003E00A0 /* View */,
+				0429163C2A1FAFAF003E00A0 /* Assets.xcassets */,
+				042916412A1FAFAF003E00A0 /* BuzzPopMac.entitlements */,
+				0429163E2A1FAFAF003E00A0 /* Preview Content */,
+			);
+			path = BuzzPopMac;
+			sourceTree = "<group>";
+		};
+		0429163E2A1FAFAF003E00A0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0429163F2A1FAFAF003E00A0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0429164D2A1FC910003E00A0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0429164E2A1FC922003E00A0 /* ProfileView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		0462879F2A16270E005EBDB1 /* MusicFiles */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +189,7 @@
 				0474BDD12A0A660900D9A3FE /* BuzzPop_ALP */,
 				0474BDE22A0A660B00D9A3FE /* BuzzPop_ALPTests */,
 				0474BDEC2A0A660B00D9A3FE /* BuzzPop_ALPUITests */,
+				042916372A1FAFAD003E00A0 /* BuzzPopMac */,
 				0474BDD02A0A660900D9A3FE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -146,6 +200,7 @@
 				0474BDCF2A0A660900D9A3FE /* BuzzPop_ALP.app */,
 				0474BDDF2A0A660B00D9A3FE /* BuzzPop_ALPTests.xctest */,
 				0474BDE92A0A660B00D9A3FE /* BuzzPop_ALPUITests.xctest */,
+				042916362A1FAFAD003E00A0 /* BuzzPopMac.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -234,6 +289,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		042916352A1FAFAD003E00A0 /* BuzzPopMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 042916422A1FAFAF003E00A0 /* Build configuration list for PBXNativeTarget "BuzzPopMac" */;
+			buildPhases = (
+				042916322A1FAFAD003E00A0 /* Sources */,
+				042916332A1FAFAD003E00A0 /* Frameworks */,
+				042916342A1FAFAD003E00A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BuzzPopMac;
+			productName = BuzzPopMac;
+			productReference = 042916362A1FAFAD003E00A0 /* BuzzPopMac.app */;
+			productType = "com.apple.product-type.application";
+		};
 		0474BDCE2A0A660900D9A3FE /* BuzzPop_ALP */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0474BDF32A0A660B00D9A3FE /* Build configuration list for PBXNativeTarget "BuzzPop_ALP" */;
@@ -297,6 +369,9 @@
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
+					042916352A1FAFAD003E00A0 = {
+						CreatedOnToolsVersion = 14.2;
+					};
 					0474BDCE2A0A660900D9A3FE = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -326,11 +401,22 @@
 				0474BDCE2A0A660900D9A3FE /* BuzzPop_ALP */,
 				0474BDDE2A0A660B00D9A3FE /* BuzzPop_ALPTests */,
 				0474BDE82A0A660B00D9A3FE /* BuzzPop_ALPUITests */,
+				042916352A1FAFAD003E00A0 /* BuzzPopMac */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		042916342A1FAFAD003E00A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				042916402A1FAFAF003E00A0 /* Preview Assets.xcassets in Resources */,
+				042916452A1FB830003E00A0 /* Assets.xcassets in Resources */,
+				0429163D2A1FAFAF003E00A0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0474BDCD2A0A660900D9A3FE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -362,6 +448,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		042916322A1FAFAD003E00A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0429164C2A1FBA3B003E00A0 /* History.swift in Sources */,
+				0429163B2A1FAFAD003E00A0 /* ContentView.swift in Sources */,
+				0429164F2A1FC922003E00A0 /* ProfileView.swift in Sources */,
+				042916392A1FAFAD003E00A0 /* BuzzPopMacApp.swift in Sources */,
+				0429164A2A1FBA3B003E00A0 /* Game.swift in Sources */,
+				0429164B2A1FBA3B003E00A0 /* User.swift in Sources */,
+				042916492A1FBA3B003E00A0 /* Music.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0474BDCB2A0A660900D9A3FE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -417,6 +517,64 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		042916432A1FAFAF003E00A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BuzzPopMac/BuzzPopMac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BuzzPopMac/Preview Content\"";
+				DEVELOPMENT_TEAM = 5CUBJYX37F;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Hagen.BuzzPopMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		042916442A1FAFAF003E00A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BuzzPopMac/BuzzPopMac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BuzzPopMac/Preview Content\"";
+				DEVELOPMENT_TEAM = 5CUBJYX37F;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Hagen.BuzzPopMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		0474BDF12A0A660B00D9A3FE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -554,6 +712,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "dylan.BuzzPop-ALP";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -583,6 +744,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "dylan.BuzzPop-ALP";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -668,6 +832,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		042916422A1FAFAF003E00A0 /* Build configuration list for PBXNativeTarget "BuzzPopMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				042916432A1FAFAF003E00A0 /* Debug */,
+				042916442A1FAFAF003E00A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		0474BDCA2A0A660900D9A3FE /* Build configuration list for PBXProject "BuzzPop_ALP" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
