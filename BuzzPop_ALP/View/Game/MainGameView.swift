@@ -17,13 +17,7 @@ struct MainGameView: View {
             VStack{
                 Text(String(viewModel.curPoints))
                     .foregroundColor(Color.white)
-//                List(viewModel.guesses, id: \.self) { songTitle in
-//                    Text(songTitle)
-//                        .background(Color.clear)
-//                }
-//                .padding([.leading, .trailing])
-//                .padding([.leading, .trailing])
-                Spacer()
+                
                 ForEach(viewModel.guesses, id: \.self){guess in
                     HStack {
                         Image(systemName: "xmark.app")
@@ -47,16 +41,6 @@ struct MainGameView: View {
             }
             VStack{
                 Spacer()
-//                if Focused {
-//                    List(viewModel.filteredSongTitles, id: \.self) { songTitle in
-//                    Button(action: {
-//                        searchText = songTitle.title
-//                    }) {
-//                        Text(songTitle.title)
-//                    }
-//                }
-//                .listStyle(.plain)
-//                }
                 if Focused{
                     ForEach(viewModel.filteredSongTitles, id: \.self){guess in
                         HStack {
@@ -77,7 +61,11 @@ struct MainGameView: View {
                                 .stroke(Color.white, lineWidth: 1)
                         )
                         .padding([.leading, .trailing])
+                        .transition(.move(edge: .bottom)) // Drop-down animation
+                        .transition(.opacity) // Drop-down animation
+
                     }
+                    .animation(.spring(response: 0.4, dampingFraction: 0.55, blendDuration: 0.5 )) // Add animation modifier
                 }
             }
         }
