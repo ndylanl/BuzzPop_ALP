@@ -44,16 +44,40 @@ struct MainGameView: View {
 
                 }
                 Spacer()
-                if Focused {
-                    List(viewModel.filteredSongTitles, id: \.self) { songTitle in
-                    Button(action: {
-                        searchText = songTitle.title
-                    }) {
-                        Text(songTitle.title)
+            }
+            VStack{
+                Spacer()
+//                if Focused {
+//                    List(viewModel.filteredSongTitles, id: \.self) { songTitle in
+//                    Button(action: {
+//                        searchText = songTitle.title
+//                    }) {
+//                        Text(songTitle.title)
+//                    }
+//                }
+//                .listStyle(.plain)
+//                }
+                if Focused{
+                    ForEach(viewModel.filteredSongTitles, id: \.self){guess in
+                        HStack {
+                            Button(action:  {
+                                searchText = guess.title
+                            }){
+                                Text(guess.title)
+                                    .foregroundColor(Color.white)
+                                    .padding(.leading)
+                            }
+                            Spacer()
+                        }
+                        .cornerRadius(10)
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 16)
+                                .stroke(Color.white, lineWidth: 1)
+                        )
+                        .padding([.leading, .trailing])
                     }
-                }
-                .listStyle(.plain)
-                .frame(height: 70)
                 }
             }
         }
