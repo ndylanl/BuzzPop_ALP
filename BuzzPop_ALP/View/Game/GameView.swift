@@ -22,10 +22,12 @@ struct GameView: View {
             VStack(){
                 MainGameView(Focused: $Focused, viewModel: viewModel, searchText: $searchText)
                 Spacer()
-                GameControlView(searchText: $searchText, viewModel: viewModel, Focused: $Focused)
-                    .padding(.bottom)
-                    .padding(.bottom)
-                    .padding(.bottom)
+                if(!viewModel.lose){
+                    GameControlView(searchText: $searchText, viewModel: viewModel, Focused: $Focused)
+                        .padding(.bottom)
+                        .padding(.bottom)
+                        .padding(.bottom)
+                }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(Color.init(red: 20/255, green: 25/255, blue: 35/255, opacity: 0.99))
@@ -36,6 +38,9 @@ struct GameView: View {
             .onDisappear {
                 // Stop updating the current time when the view disappears
                 viewModel.stopUpdatingCurrentTime()
+            }
+            .alert(isPresented: $viewModel.correctAnswer) {
+                Alert(title: Text("Correct!"), message: Text("\(viewModel.guessCount + 1)/5 used! +\(viewModel.pointsAwarded)"), dismissButton: .default(Text("Next"), action: viewModel.confirmNext))
             }
         }
     }

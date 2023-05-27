@@ -68,11 +68,13 @@ class Game: NSObject, ObservableObject {
             pointsAwarded -= 20
             if(guessCount >= 5){
                 lose = true
+                
             }
         }
     }
     
     func loseGame(){
+        lose = false
         nextMusic()
         pointsAwarded = 100
         guesses.removeAll()

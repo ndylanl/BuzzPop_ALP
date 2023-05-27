@@ -68,25 +68,24 @@ struct GameControlView: View {
             .onChange(of: searchText) { newValue in
                 viewModel.updateFilteredSongTitles(guess: searchText)
             }
-            
-            HStack{
-                Button(action: {
-                    viewModel.increaseDuration(amount: 5)
-                }) {
-                    Text("Skip(+5s)")
+            if(!viewModel.lose){
+                HStack{
+                    Button(action: {
+                        viewModel.increaseDuration(amount: 5)
+                    }) {
+                        Text("Skip(+5s)")
+                    }
+                    Spacer()
+                    Button(action: {
+                        viewModel.guessAnswer(guess: searchText)
+                        searchText = ""
+                    }) {
+                        Text("Submit")
+                    }
                 }
-                Spacer()
-                Button(action: {
-                    viewModel.guessAnswer(guess: searchText)
-                    searchText = ""
-                }) {
-                    Text("Submit")
-                }
+                .padding([.leading, .trailing])
+                .padding([.leading, .trailing])
             }
-            .padding([.leading, .trailing])
-            .padding([.leading, .trailing])
-
-            
         }
         .frame(maxWidth: .infinity, maxHeight: 180)
         .background(Color.init(red: 20/255, green: 25/255, blue: 35/255, opacity: 1.8))
