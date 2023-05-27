@@ -40,7 +40,7 @@ struct GameView: View {
                 viewModel.stopUpdatingCurrentTime()
             }
             .alert(isPresented: $viewModel.correctAnswer) {
-                Alert(title: Text("Correct!"), message: Text("\(viewModel.guessCount + 1)/5 used! +\(viewModel.pointsAwarded)"), dismissButton: .default(Text("Next"), action: viewModel.confirmNext))
+                Alert(title: Text("Correct!"), message: Text("\(viewModel.guessCount + 1)/5 guesses used! +\(viewModel.pointsAwarded)"), dismissButton: .default(Text("Next"), action: viewModel.confirmNext))
             }
         }
     }
