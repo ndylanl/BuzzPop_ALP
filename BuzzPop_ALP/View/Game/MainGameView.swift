@@ -11,11 +11,17 @@ struct MainGameView: View {
     @Binding var Focused: Bool
     @ObservedObject var viewModel: Game
     @Binding var searchText: String
-
+    
     var body: some View {
         ZStack{
+            if viewModel.correctAnswer{
+                Color.green
+                    .edgesIgnoringSafeArea(.all)
+                    .opacity(0.05)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+            }
             VStack{
-                Text(String(viewModel.curPoints))
+                Text("Score: \(viewModel.curPoints)")
                     .foregroundColor(Color.white)
                 
                 ForEach(viewModel.guesses, id: \.self){guess in
@@ -35,39 +41,71 @@ struct MainGameView: View {
                             .stroke(Color.white, lineWidth: 1)
                     )
                     .padding([.leading, .trailing])
-
+                }
+                if viewModel.correctAnswer{
+                    HStack {
+                        Image(systemName: "checkmark.rectangle")
+                            .foregroundColor(.green)
+                        Text(viewModel.curMusic.title)
+                            .foregroundColor(Color.white)
+                            .padding(.leading)
+                        Spacer()
+                    }
+                    .cornerRadius(10)
+                    .frame(maxWidth: .infinity)
+                    .padding()
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 16)
+                            .stroke(Color.white, lineWidth: 1)
+                    )
+                    .padding([.leading, .trailing])
                 }
                 Spacer()
+                Divider().background(Color.white)
             }
             VStack{
                 Spacer()
                 if Focused{
-                    ForEach(viewModel.filteredSongTitles, id: \.self){guess in
-                        HStack {
-                            Button(action:  {
-                                searchText = guess.title
-                            }){
-                                Text(guess.title)
-                                    .foregroundColor(Color.white)
-                                    .padding(.leading)
+                    ScrollView{
+                        Spacer()
+                        ForEach(viewModel.filteredSongTitles, id: \.self){guess in
+                            HStack {
+                                Button(action:  {
+                                    searchText = guess.title
+                                }){
+                                    Text(guess.title)
+                                        .foregroundColor(Color.white)
+                                        .padding(.leading)
+                                }
+                                Spacer()
                             }
-                            Spacer()
+                            .cornerRadius(10)
+                            .frame(maxWidth: .infinity)
+                            .padding()
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 16)
+                                    .stroke(Color.white, lineWidth: 1)
+                            )
+                            .padding([.leading, .trailing])
+                            .transition(.move(edge: .bottom)) // Drop-down animation
+                            .transition(.opacity) // Drop-down animation
+                            
                         }
-                        .cornerRadius(10)
-                        .frame(maxWidth: .infinity)
-                        .padding()
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 16)
-                                .stroke(Color.white, lineWidth: 1)
-                        )
-                        .padding([.leading, .trailing])
-                        .transition(.move(edge: .bottom)) // Drop-down animation
-                        .transition(.opacity) // Drop-down animation
-
+                        //.animation(.spring(response: 0.2, dampingFraction: 0.55, blendDuration: 0.5 ))
                     }
-                    .animation(.spring(response: 0.4, dampingFraction: 0.55, blendDuration: 0.5 )) // Add animation modifier
+                    .frame(maxHeight: 130)
+                    .overlay(
+                        Rectangle()
+                            .stroke(Color.white, lineWidth: 0.1)
+                    )
                 }
             }
+        }
+        .alert(isPresented: $viewModel.correctAnswer) {
+            Alert(title: Text("Correct!"), message: Text("\(viewModel.guessCount + 1)/5 used! +\(viewModel.pointsAwarded)"), dismissButton: .default(Text("Next"), action: viewModel.confirmNext))
+        }
+        .alert(isPresented: $viewModel.lose) {
+            Alert(title: Text("You Lose!"), message: Text("Total Score: \(viewModel.curPoints)"), dismissButton: .default(Text("New Game"), action: viewModel.loseGame))
         }
     }
 }

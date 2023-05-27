@@ -20,6 +20,8 @@ class Game: NSObject, ObservableObject {
     @Published var guessCount = 0
     @Published var guesses: [String] = []
     @Published var curPoints = 0
+    @Published var correctAnswer = false
+    @Published var lose = false
     private var timer: Timer?
 
     
@@ -38,10 +40,19 @@ class Game: NSObject, ObservableObject {
     
     func increaseDuration(amount: Int){
         duration += amount
+        pointsAwarded -= 10
     }
     
     func awardPoints(user: User){
         user.score += pointsAwarded
+    }
+    
+    func confirmNext(){
+        nextMusic()
+        guesses.removeAll()
+        curPoints += pointsAwarded
+        pointsAwarded = 100
+        guessCount = 0
     }
     
     func guessAnswer(guess: String){
@@ -49,22 +60,23 @@ class Game: NSObject, ObservableObject {
             return
         }
         if(guess.lowercased() == curMusic.title.lowercased()){
-            nextMusic()
-            guesses.removeAll()
-            curPoints += pointsAwarded
-            pointsAwarded = 100
-            guessCount = 0
+            duration = 40
+            correctAnswer = true
         }else{
             guessCount += 1
             guesses.append(guess)
             pointsAwarded -= 20
             if(guessCount >= 5){
-                nextMusic()
-                pointsAwarded = 100
-                guesses.removeAll()
-                guessCount = 0
+                lose = true
             }
         }
+    }
+    
+    func loseGame(){
+        nextMusic()
+        pointsAwarded = 100
+        guesses.removeAll()
+        guessCount = 0
     }
     
     func updateFilteredSongTitles(guess: String) {
