@@ -372,7 +372,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
-				LastUpgradeCheck = 1420;
+				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					042916352A1FAFAD003E00A0 = {
 						CreatedOnToolsVersion = 14.2;
@@ -534,6 +534,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"BuzzPopMac/Preview Content\"";
 				DEVELOPMENT_TEAM = 5CUBJYX37F;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -563,6 +564,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"BuzzPopMac/Preview Content\"";
 				DEVELOPMENT_TEAM = 5CUBJYX37F;
 				ENABLE_HARDENED_RUNTIME = YES;
