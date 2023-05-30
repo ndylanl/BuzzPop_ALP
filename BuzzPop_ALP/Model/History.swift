@@ -21,6 +21,10 @@ class History: ObservableObject{
     func sortScore(){
         score.sort(by: >)
     }
+    
+    func addScore(score: Int){
+        self.score.append(score)
+    }
 
 }
 

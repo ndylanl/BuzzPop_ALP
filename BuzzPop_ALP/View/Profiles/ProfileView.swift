@@ -12,6 +12,7 @@ struct ProfileView: View {
 
     @ObservedObject var user: User
     @Binding var showingEdit: Bool
+    
 //    @Binding var userForEdit: User
 
 

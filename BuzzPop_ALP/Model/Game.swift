@@ -22,6 +22,8 @@ class Game: NSObject, ObservableObject {
     @Published var curPoints = 0
     @Published var correctAnswer = false
     @Published var lose = false
+    @Published var history: History = History()
+
     private var timer: Timer?
 
     
@@ -76,6 +78,7 @@ class Game: NSObject, ObservableObject {
     func loseGame(){
         lose = false
         nextMusic()
+        history.addScore(score: curPoints)
         pointsAwarded = 100
         guesses.removeAll()
         guessCount = 0

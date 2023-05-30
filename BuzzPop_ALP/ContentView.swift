@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @State var bool = false
     
-    @State private var selection: Tab = .history
+    @State private var selection: Tab = .game
     
     enum Tab {
         case game
