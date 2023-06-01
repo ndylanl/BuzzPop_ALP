@@ -127,6 +127,7 @@ class Game: NSObject, ObservableObject {
         if(isPlaying){
             audioPlayer?.pause()
             isPlaying = false
+            print("defak")
         }else{
             isPlaying = true
             if(audioPlayer == nil ){
@@ -150,8 +151,10 @@ class Game: NSObject, ObservableObject {
                 } catch {
                     print("Failed to play the audio: \(error.localizedDescription)")
                 }
+                print("woi")
             }else{
                 audioPlayer?.play()
+                print("kfnvk")
             }
         }
     }

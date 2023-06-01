@@ -27,7 +27,7 @@ struct ContentView: View {
                     
                     
                     // play game
-                    NavigationLink(destination: ProfileView(user: user)) {
+                    NavigationLink(destination: MacGameView()) {
                         ZStack {
                             Color.white
                                 .cornerRadius(15)
