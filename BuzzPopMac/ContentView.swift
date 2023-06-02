@@ -45,7 +45,7 @@ struct ContentView: View {
                     // history
                     NavigationLink(destination: ProfileView(user: user)) {
                         ZStack {
-                            Color.orange
+                            Color.white
                                 .cornerRadius(15)
                             Text("History")
                                 .foregroundColor(Color("primaryColor"))
@@ -62,7 +62,7 @@ struct ContentView: View {
                     //profile
                     NavigationLink(destination: ProfileView(user: user)) {
                         ZStack {
-                            Color.blue
+                            Color.white
                                 .cornerRadius(15)
                             Text("Profile")
                                 .foregroundColor(Color("primaryColor"))
@@ -80,7 +80,7 @@ struct ContentView: View {
                         NSApplication.shared.terminate(nil)
                     }) {
                         ZStack {
-                            Color.red
+                            Color.white
                                 .cornerRadius(15)
                             Text("Quit")
                                 .foregroundColor(Color("primaryColor"))
