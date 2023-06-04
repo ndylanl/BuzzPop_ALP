@@ -34,6 +34,16 @@ class Game: NSObject, ObservableObject {
             Music(url: "Franz Ferdinand - This Fire", title: "This Fire", artist: "Franz Ferdinand"),
             Music(url: "ZICO - Any Song", title: "Any Song", artist: "ZICO"),
             Music(url: "YOASOBI - Racing Into The Night", title: "Racing Into The Night", artist: "YOASOBI"),
+            Music(url: "Doja Cat - Kiss Me More", title: "Kiss Me More", artist: "Doja Cat"),
+            Music(url: "George Michael - Careless Whisper", title: "Careless Whisper", artist: "George Michael"),
+            Music(url: "Hers - Harvey", title: "Harvey", artist: "Hers"),
+            Music(url: "Labrinth - Jealous", title: "Jealous", artist: "Labrinth"),
+            Music(url: "Rick Astley - Never Gonna Give You Up", title: "Never Gonna Give You Up", artist: "Rick Astley"),
+            Music(url: "Coldplay - The Scientist", title: "The Scientist", artist: "Coldplay"),
+            Music(url: "Smash Mouth - All Star", title: "All Star", artist: "Smash Mouth"),
+            Music(url: "PinkPantheress Ice Spice - Boys a liar Pt 2", title: "Boys a liar Pt 2", artist: "PinkPantheress Ice Spice"),
+            Music(url: "Doja Cat - Say So", title: "Say So", artist: "Doja Cat"),
+
         ]
         curMusic = Music(url: "Tame Impala - The Less I Know The Better.mp3", title: "The Less I Know The Better", artist: "Tame Impala")
         super.init()
@@ -65,6 +75,10 @@ class Game: NSObject, ObservableObject {
             return
         }
         if(guess.lowercased() == curMusic.title.lowercased()){
+            if(!isPlaying){
+                audioPlayer?.currentTime = TimeInterval(duration)
+                audioPlayer?.play()
+            }
             duration = 40
             correctAnswer = true
         }else{

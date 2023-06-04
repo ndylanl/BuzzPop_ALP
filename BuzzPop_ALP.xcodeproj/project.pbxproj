@@ -50,6 +50,24 @@
 		04F8A5602A28546A00ED8E50 /* Tame Impala - The Less I Know The Better.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 046287A22A1627B6005EBDB1 /* Tame Impala - The Less I Know The Better.mp3 */; };
 		04F8A5622A28554D00ED8E50 /* MacTopGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F8A5612A28554D00ED8E50 /* MacTopGameView.swift */; };
 		04F8A5642A2855AD00ED8E50 /* MacGameControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F8A5632A2855AD00ED8E50 /* MacGameControlView.swift */; };
+		04F8A5662A2C510E00ED8E50 /* Smash Mouth - All Star.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04F8A5652A2C510E00ED8E50 /* Smash Mouth - All Star.mp3 */; };
+		04F8A5672A2C510E00ED8E50 /* Smash Mouth - All Star.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04F8A5652A2C510E00ED8E50 /* Smash Mouth - All Star.mp3 */; };
+		04F8A5692A2C513500ED8E50 /* Rick Astley - Never Gonna Give You Up.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04F8A5682A2C513500ED8E50 /* Rick Astley - Never Gonna Give You Up.mp3 */; };
+		04F8A56A2A2C513500ED8E50 /* Rick Astley - Never Gonna Give You Up.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04F8A5682A2C513500ED8E50 /* Rick Astley - Never Gonna Give You Up.mp3 */; };
+		04F8A56C2A2C514600ED8E50 /* George Michael - Careless Whisper.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04F8A56B2A2C514600ED8E50 /* George Michael - Careless Whisper.mp3 */; };
+		04F8A56D2A2C514600ED8E50 /* George Michael - Careless Whisper.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04F8A56B2A2C514600ED8E50 /* George Michael - Careless Whisper.mp3 */; };
+		04F8A56F2A2C517B00ED8E50 /* Doja Cat - Kiss Me More.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04F8A56E2A2C517B00ED8E50 /* Doja Cat - Kiss Me More.mp3 */; };
+		04F8A5702A2C517B00ED8E50 /* Doja Cat - Kiss Me More.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04F8A56E2A2C517B00ED8E50 /* Doja Cat - Kiss Me More.mp3 */; };
+		04F8A5722A2C519400ED8E50 /* Doja Cat - Say So.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04F8A5712A2C519400ED8E50 /* Doja Cat - Say So.mp3 */; };
+		04F8A5732A2C519400ED8E50 /* Doja Cat - Say So.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04F8A5712A2C519400ED8E50 /* Doja Cat - Say So.mp3 */; };
+		04F8A5752A2C51C000ED8E50 /* Hers - Harvey.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04F8A5742A2C51C000ED8E50 /* Hers - Harvey.mp3 */; };
+		04F8A5762A2C51C000ED8E50 /* Hers - Harvey.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04F8A5742A2C51C000ED8E50 /* Hers - Harvey.mp3 */; };
+		04F8A5782A2C51D400ED8E50 /* Labrinth - Jealous.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04F8A5772A2C51D400ED8E50 /* Labrinth - Jealous.mp3 */; };
+		04F8A5792A2C51D400ED8E50 /* Labrinth - Jealous.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04F8A5772A2C51D400ED8E50 /* Labrinth - Jealous.mp3 */; };
+		04F8A57B2A2C51EA00ED8E50 /* Coldplay - The Scientist.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04F8A57A2A2C51EA00ED8E50 /* Coldplay - The Scientist.mp3 */; };
+		04F8A57C2A2C51EA00ED8E50 /* Coldplay - The Scientist.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04F8A57A2A2C51EA00ED8E50 /* Coldplay - The Scientist.mp3 */; };
+		04F8A57E2A2C51FB00ED8E50 /* PinkPantheress Ice Spice - Boys a liar Pt 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04F8A57D2A2C51FB00ED8E50 /* PinkPantheress Ice Spice - Boys a liar Pt 2.mp3 */; };
+		04F8A57F2A2C51FB00ED8E50 /* PinkPantheress Ice Spice - Boys a liar Pt 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04F8A57D2A2C51FB00ED8E50 /* PinkPantheress Ice Spice - Boys a liar Pt 2.mp3 */; };
 		42A426132A1C3FD200884FE7 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A426122A1C3FD200884FE7 /* History.swift */; };
 		42A426162A1C971B00884FE7 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A426152A1C971B00884FE7 /* HistoryView.swift */; };
 		42A4261D2A204B2F00884FE7 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 42A4261C2A204B2F00884FE7 /* SwiftUICharts */; };
@@ -109,6 +127,15 @@
 		04F8A5572A28452E00ED8E50 /* MacGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacGameView.swift; sourceTree = "<group>"; };
 		04F8A5612A28554D00ED8E50 /* MacTopGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacTopGameView.swift; sourceTree = "<group>"; };
 		04F8A5632A2855AD00ED8E50 /* MacGameControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacGameControlView.swift; sourceTree = "<group>"; };
+		04F8A5652A2C510E00ED8E50 /* Smash Mouth - All Star.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Smash Mouth - All Star.mp3"; sourceTree = "<group>"; };
+		04F8A5682A2C513500ED8E50 /* Rick Astley - Never Gonna Give You Up.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rick Astley - Never Gonna Give You Up.mp3"; sourceTree = "<group>"; };
+		04F8A56B2A2C514600ED8E50 /* George Michael - Careless Whisper.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "George Michael - Careless Whisper.mp3"; sourceTree = "<group>"; };
+		04F8A56E2A2C517B00ED8E50 /* Doja Cat - Kiss Me More.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Doja Cat - Kiss Me More.mp3"; sourceTree = "<group>"; };
+		04F8A5712A2C519400ED8E50 /* Doja Cat - Say So.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Doja Cat - Say So.mp3"; sourceTree = "<group>"; };
+		04F8A5742A2C51C000ED8E50 /* Hers - Harvey.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Hers - Harvey.mp3"; sourceTree = "<group>"; };
+		04F8A5772A2C51D400ED8E50 /* Labrinth - Jealous.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Labrinth - Jealous.mp3"; sourceTree = "<group>"; };
+		04F8A57A2A2C51EA00ED8E50 /* Coldplay - The Scientist.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Coldplay - The Scientist.mp3"; sourceTree = "<group>"; };
+		04F8A57D2A2C51FB00ED8E50 /* PinkPantheress Ice Spice - Boys a liar Pt 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "PinkPantheress Ice Spice - Boys a liar Pt 2.mp3"; sourceTree = "<group>"; };
 		42A426122A1C3FD200884FE7 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 		42A426152A1C971B00884FE7 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -190,8 +217,17 @@
 			isa = PBXGroup;
 			children = (
 				04F8A53B2A1F0B1500ED8E50 /* ZICO - Any Song.mp3 */,
+				04F8A56E2A2C517B00ED8E50 /* Doja Cat - Kiss Me More.mp3 */,
+				04F8A56B2A2C514600ED8E50 /* George Michael - Careless Whisper.mp3 */,
+				04F8A5742A2C51C000ED8E50 /* Hers - Harvey.mp3 */,
+				04F8A5772A2C51D400ED8E50 /* Labrinth - Jealous.mp3 */,
+				04F8A5682A2C513500ED8E50 /* Rick Astley - Never Gonna Give You Up.mp3 */,
+				04F8A57A2A2C51EA00ED8E50 /* Coldplay - The Scientist.mp3 */,
 				04F8A5392A1F0AF600ED8E50 /* YOASOBI - Racing Into The Night.mp3 */,
+				04F8A5652A2C510E00ED8E50 /* Smash Mouth - All Star.mp3 */,
+				04F8A57D2A2C51FB00ED8E50 /* PinkPantheress Ice Spice - Boys a liar Pt 2.mp3 */,
 				0462879D2A1626FC005EBDB1 /* Franz Ferdinand - This Fire.mp3 */,
+				04F8A5712A2C519400ED8E50 /* Doja Cat - Say So.mp3 */,
 				046287A02A1627AB005EBDB1 /* Joji.mp3 */,
 				046287A22A1627B6005EBDB1 /* Tame Impala - The Less I Know The Better.mp3 */,
 			);
@@ -442,10 +478,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				042916402A1FAFAF003E00A0 /* Preview Assets.xcassets in Resources */,
+				04F8A5672A2C510E00ED8E50 /* Smash Mouth - All Star.mp3 in Resources */,
 				04F8A5602A28546A00ED8E50 /* Tame Impala - The Less I Know The Better.mp3 in Resources */,
+				04F8A5792A2C51D400ED8E50 /* Labrinth - Jealous.mp3 in Resources */,
+				04F8A57C2A2C51EA00ED8E50 /* Coldplay - The Scientist.mp3 in Resources */,
+				04F8A56D2A2C514600ED8E50 /* George Michael - Careless Whisper.mp3 in Resources */,
 				042916452A1FB830003E00A0 /* Assets.xcassets in Resources */,
 				04F8A55C2A28545F00ED8E50 /* ZICO - Any Song.mp3 in Resources */,
+				04F8A57F2A2C51FB00ED8E50 /* PinkPantheress Ice Spice - Boys a liar Pt 2.mp3 in Resources */,
+				04F8A5732A2C519400ED8E50 /* Doja Cat - Say So.mp3 in Resources */,
+				04F8A5702A2C517B00ED8E50 /* Doja Cat - Kiss Me More.mp3 in Resources */,
+				04F8A5762A2C51C000ED8E50 /* Hers - Harvey.mp3 in Resources */,
 				04F8A55D2A28546300ED8E50 /* YOASOBI - Racing Into The Night.mp3 in Resources */,
+				04F8A56A2A2C513500ED8E50 /* Rick Astley - Never Gonna Give You Up.mp3 in Resources */,
 				04F8A55E2A28546500ED8E50 /* Franz Ferdinand - This Fire.mp3 in Resources */,
 				0429163D2A1FAFAF003E00A0 /* Assets.xcassets in Resources */,
 				04F8A55F2A28546800ED8E50 /* Joji.mp3 in Resources */,
@@ -458,10 +503,19 @@
 			files = (
 				04F8A53A2A1F0AF600ED8E50 /* YOASOBI - Racing Into The Night.mp3 in Resources */,
 				0462879E2A1626FC005EBDB1 /* Franz Ferdinand - This Fire.mp3 in Resources */,
+				04F8A5662A2C510E00ED8E50 /* Smash Mouth - All Star.mp3 in Resources */,
+				04F8A5722A2C519400ED8E50 /* Doja Cat - Say So.mp3 in Resources */,
+				04F8A5752A2C51C000ED8E50 /* Hers - Harvey.mp3 in Resources */,
+				04F8A56C2A2C514600ED8E50 /* George Michael - Careless Whisper.mp3 in Resources */,
+				04F8A5692A2C513500ED8E50 /* Rick Astley - Never Gonna Give You Up.mp3 in Resources */,
+				04F8A57B2A2C51EA00ED8E50 /* Coldplay - The Scientist.mp3 in Resources */,
+				04F8A57E2A2C51FB00ED8E50 /* PinkPantheress Ice Spice - Boys a liar Pt 2.mp3 in Resources */,
 				04F8A53C2A1F0B1600ED8E50 /* ZICO - Any Song.mp3 in Resources */,
 				046287A32A1627B6005EBDB1 /* Tame Impala - The Less I Know The Better.mp3 in Resources */,
 				0474BDDA2A0A660B00D9A3FE /* Preview Assets.xcassets in Resources */,
+				04F8A5782A2C51D400ED8E50 /* Labrinth - Jealous.mp3 in Resources */,
 				0474BDD72A0A660B00D9A3FE /* Assets.xcassets in Resources */,
+				04F8A56F2A2C517B00ED8E50 /* Doja Cat - Kiss Me More.mp3 in Resources */,
 				046287A12A1627AB005EBDB1 /* Joji.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
