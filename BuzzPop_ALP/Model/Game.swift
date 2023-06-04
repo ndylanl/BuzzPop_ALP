@@ -41,6 +41,9 @@ class Game: NSObject, ObservableObject {
     }
     
     func increaseDuration(amount: Int){
+        if(duration >= 30){
+            return
+        }
         duration += amount
         pointsAwarded -= 10
     }

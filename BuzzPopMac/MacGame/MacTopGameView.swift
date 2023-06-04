@@ -20,6 +20,7 @@ struct MacTopGameView: View {
                 }
                 Text("Score: \(viewModel.curPoints)")
                     .foregroundColor(Color.white)
+                    .padding(.top)
                 
                 ForEach(viewModel.guesses, id: \.self){guess in
                     HStack {
@@ -129,7 +130,7 @@ struct MacTopGameView: View {
                             }
                             //.animation(.spring(response: 0.2, dampingFraction: 0.55, blendDuration: 0.5 ))
                         }
-                        .frame(maxHeight: 130)
+                        .frame(maxHeight: 100)
                         .overlay(
                             Rectangle()
                                 .stroke(Color.white, lineWidth: 0.1)

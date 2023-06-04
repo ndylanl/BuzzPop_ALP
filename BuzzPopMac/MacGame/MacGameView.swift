@@ -18,10 +18,13 @@ struct MacGameView: View {
             
             VStack(){
                 MacTopGameView(Focused: $Focused, viewModel: viewModel, searchText: $searchText)
+                    .padding(.top)
+                    .padding(.top)
+                    .padding(.top)
                 Spacer()
                 if(!viewModel.lose){
                     MacGameControlView(searchText: $searchText, viewModel: viewModel, Focused: $Focused)
-                        .frame(maxHeight: 80)
+                        .frame(maxHeight: 90)
                         .padding(.bottom)
                         .padding(.bottom)
                 }
