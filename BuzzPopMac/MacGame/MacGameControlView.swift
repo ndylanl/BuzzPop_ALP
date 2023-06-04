@@ -15,8 +15,10 @@ struct MacGameControlView: View {
     
     var body: some View {
         VStack{
+            Divider().background(Color.white)
             HStack{
                 Text(viewModel.formatTime(viewModel.audioPlayer?.currentTime ?? 0.0))
+                    .padding(.top)
                     .padding(.top)
                 Spacer()
                 Button(action: {
@@ -27,7 +29,7 @@ struct MacGameControlView: View {
 
                 }) {
                     Image(systemName: viewModel.isPlaying ? "pause.circle.fill" : "play.circle.fill")
-                        .font(.system(size: 40))
+                        .font(.system(size: 60))
                         .foregroundColor(.green)
                         .background(Color.white.opacity(0.98))
                         .cornerRadius(200)
@@ -36,15 +38,22 @@ struct MacGameControlView: View {
                 Spacer()
                 Text(viewModel.formatTime(TimeInterval(viewModel.duration)))
                     .padding(.top)
+                    .padding(.top)
+                    .padding(.top)
+
             }
             .padding([.leading, .trailing])
             .padding([.leading, .trailing])
+            .padding(.top, -30)
             HStack {
                 Image(systemName: "magnifyingglass")
                     .foregroundColor(.gray)
                 TextField("Search", text: $searchText)
                     .focused($isSearchBoxFocused)
                     .cornerRadius(16)
+                    .font(.system(size: 16))
+                    .frame(maxHeight: 40)
+
                 if !searchText.isEmpty {
                     Button(action: {
                         self.searchText = ""
@@ -55,8 +64,7 @@ struct MacGameControlView: View {
                 }
             }
             .cornerRadius(16)
-            .padding(.bottom)
-            .padding([.leading, .trailing])
+            .padding()
             .onChange(of: isSearchBoxFocused) { focused in
                 if focused {
                     Focused = true
@@ -73,7 +81,9 @@ struct MacGameControlView: View {
                         viewModel.increaseDuration(amount: 5)
                     }) {
                         Text("Skip(+5s)")
+                            .frame(height: 50)
                     }
+                    .frame(height: 50)
                     Spacer()
                     Button(action: {
                         viewModel.guessAnswer(guess: searchText)
@@ -81,14 +91,17 @@ struct MacGameControlView: View {
                     }) {
                         Text("Submit")
                     }
+                    .padding()
+                    .font(.system(size: 14))
                 }
                 .padding([.leading, .trailing])
                 .padding([.leading, .trailing])
             }
         }
-        .frame(maxWidth: .infinity, maxHeight: 70)
+        .frame(maxWidth: .infinity, maxHeight: 130)
         .background(Color.init(red: 20/255, green: 25/255, blue: 35/255, opacity: 1.8))
         .foregroundColor(Color.white)
+
     }
 }
 

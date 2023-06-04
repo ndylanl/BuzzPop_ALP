@@ -34,11 +34,13 @@ struct MacTopGameView: View {
                     .cornerRadius(10)
                     .frame(maxWidth: .infinity)
                     .padding()
+                    .padding()
                     .overlay(
                         RoundedRectangle(cornerRadius: 16)
                             .stroke(Color.white, lineWidth: 1)
                     )
                     .padding([.leading, .trailing])
+                    .padding(.bottom)
                 }
                 Button(action: {
                     viewModel.loseGame()
@@ -68,10 +70,12 @@ struct MacTopGameView: View {
                             Text(guess)
                                 .foregroundColor(Color.white)
                                 .padding(.leading)
+                                .font(.system(size: 16))
                             Spacer()
                         }
                         .cornerRadius(10)
                         .frame(maxWidth: .infinity)
+                        .padding()
                         .padding()
                         .overlay(
                             RoundedRectangle(cornerRadius: 16)
@@ -86,6 +90,7 @@ struct MacTopGameView: View {
                             Text(viewModel.curMusic.title)
                                 .foregroundColor(Color.white)
                                 .padding(.leading)
+                                .font(.system(size: 16))
                             Spacer()
                         }
                         .cornerRadius(10)
@@ -98,7 +103,6 @@ struct MacTopGameView: View {
                         .padding([.leading, .trailing])
                     }
                     Spacer()
-                    Divider().background(Color.white)
                 }
                 VStack{
                     Spacer()
@@ -112,17 +116,14 @@ struct MacTopGameView: View {
                                     }){
                                         Text(guess.title)
                                             .foregroundColor(Color.white)
-                                            .padding(.leading)
+                                            .cornerRadius(10)
+                                            .frame(maxWidth: .infinity, maxHeight: 80)
+                                            .padding()
+                                            .padding()
+                                            .font(.system(size: 16))
                                     }
                                     Spacer()
                                 }
-                                .cornerRadius(10)
-                                .frame(maxWidth: .infinity)
-                                .padding()
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 16)
-                                        .stroke(Color.white, lineWidth: 1)
-                                )
                                 .padding([.leading, .trailing])
                                 .transition(.move(edge: .bottom)) // Drop-down animation
                                 .transition(.opacity) // Drop-down animation
@@ -130,7 +131,7 @@ struct MacTopGameView: View {
                             }
                             //.animation(.spring(response: 0.2, dampingFraction: 0.55, blendDuration: 0.5 ))
                         }
-                        .frame(maxHeight: 100)
+                        .frame(maxHeight: 200)
                         .overlay(
                             Rectangle()
                                 .stroke(Color.white, lineWidth: 0.1)

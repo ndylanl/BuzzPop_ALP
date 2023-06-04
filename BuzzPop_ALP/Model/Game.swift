@@ -73,7 +73,6 @@ class Game: NSObject, ObservableObject {
             pointsAwarded -= 20
             if(guessCount >= 5){
                 lose = true
-                
             }
         }
     }
