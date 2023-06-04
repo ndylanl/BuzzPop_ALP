@@ -21,6 +21,8 @@ struct MacGameView: View {
                     .padding(.top)
                     .padding(.top)
                     .padding(.top)
+                    .padding(.top)
+                    .padding(.top)
                 Spacer()
                 if(!viewModel.lose){
                     MacGameControlView(searchText: $searchText, viewModel: viewModel, Focused: $Focused)
