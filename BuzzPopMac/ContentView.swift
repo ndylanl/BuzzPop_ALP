@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
 
-    @ObservedObject var user = User(ID: 123, username: "John", password: "password", score: 100, notification: true)
+    @ObservedObject var user = User(ID: 123, username: "John", password: "password", score: 0, notification: true)
 
 
     var body: some View {

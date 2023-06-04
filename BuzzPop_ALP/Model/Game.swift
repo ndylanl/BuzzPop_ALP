@@ -58,16 +58,18 @@ class Game: NSObject, ObservableObject {
         pointsAwarded -= 10
     }
     
-    func awardPoints(user: User){
-        user.score += pointsAwarded
-    }
+//    func awardPoints(user: User){
+//        user.score += pointsAwarded
+//    }
     
-    func confirmNext(){
+    func confirmNext(user: User){
         nextMusic()
         guesses.removeAll()
         curPoints += pointsAwarded
+        user.score += pointsAwarded
         pointsAwarded = 100
         guessCount = 0
+        
     }
     
     func guessAnswer(guess: String){

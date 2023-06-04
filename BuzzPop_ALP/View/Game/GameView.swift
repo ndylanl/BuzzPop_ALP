@@ -14,6 +14,7 @@ struct GameView: View {
     @State private var filteredSongTitles: [String] = []
     @State private var Focused = false
     @State private var searchText = ""
+    @ObservedObject var user: User
 
 
     var body: some View {
@@ -40,14 +41,14 @@ struct GameView: View {
                 viewModel.stopUpdatingCurrentTime()
             }
             .alert(isPresented: $viewModel.correctAnswer) {
-                Alert(title: Text("Correct!"), message: Text("\(viewModel.guessCount + 1)/5 guesses used! +\(viewModel.pointsAwarded)"), dismissButton: .default(Text("Next"), action: viewModel.confirmNext))
+                Alert(title: Text("Correct!"), message: Text("\(viewModel.guessCount + 1)/5 guesses used! +\(viewModel.pointsAwarded)"), dismissButton: .default(Text("Next"), action: {viewModel.confirmNext(user: user)}))
             }
         }
     }
 }
 
-struct GameView_Previews: PreviewProvider {
-    static var previews: some View {
-        GameView()
-    }
-}
+//struct GameView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        GameView()
+//    }
+//}

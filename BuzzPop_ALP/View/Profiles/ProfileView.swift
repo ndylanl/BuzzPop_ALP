@@ -17,63 +17,63 @@ struct ProfileView: View {
 
 
     var body: some View {
-        
-        VStack(alignment: .leading, spacing: 10) {
-            
-            Text("Profile")
-                .bold()
-                .font(.largeTitle)
-                .foregroundColor(.white)
-
-            //username
-            HStack{
-                Text(user.username)
+            VStack(alignment: .leading, spacing: 10) {
+                
+                Text("Profile")
                     .bold()
-                    .font(.title)
-                    .padding(.trailing)
-                Text("#\(user.ID)")
-            }
-            .foregroundColor(.white)
-
-               
-            Text("Score:")
-                .bold()
-                .font(.title2)
-                .foregroundColor(.white)
-
-            //score
-            HStack{
-                Image(systemName: "star.fill")
-                    .foregroundColor(.yellow)
-                    .padding(.trailing)
-        
-                Text("\(user.score) Points")
-            }
-            .padding(.bottom)
-            .foregroundColor(.white)
-
-            
-            Form{
-                Section(header: Text("Account Settings")){
-                    Text("Change Credentials")
-                    // if pressed change
-                        .onTapGesture {
-                            showingEdit.toggle()
+                    .font(.largeTitle)
+//                    .foregroundColor(.white)
+                
+                //username
+                HStack{
+                    Text(user.username)
+                        .bold()
+                        .font(.title)
+                        .padding(.trailing)
+                    Text("#\(user.ID)")
+                }
+//                .foregroundColor(.white)
+                
+                
+                Text("Score:")
+                    .bold()
+                    .font(.title2)
+//                    .foregroundColor(.white)
+                
+                //score
+                HStack{
+                    Image(systemName: "star.fill")
+                        .foregroundColor(.yellow)
+                        .padding(.trailing)
+                    
+                    Text("\(user.score) Points")
+                }
+                .padding(.bottom)
+//                .foregroundColor(.white)
+                
+                
+                Form{
+                    Section(header: Text("Account Settings")){
+                        Text("Change Credentials")
+                        // if pressed change
+                            .onTapGesture {
+                                showingEdit.toggle()
+                            }
+                        
+                        Toggle(isOn: $user.notification){
+                            Text("Push Notification")
                         }
-                    
-                    Toggle(isOn: $user.notification){
-                        Text("Push Notification")
+                        
+                        Text("Sign Out")
+                            .foregroundColor(.red)
                     }
-                    
-                    Text("Sign Out")
-                        .foregroundColor(.red)
-                    }
+                }
+                
+                Spacer()
             }
-            Spacer()
-        }
-        .padding()
-        .background(.black)
-        
+            .background(Color(UIColor.systemGroupedBackground))
+            .edgesIgnoringSafeArea(.all)
+            .padding()
     }
 }
 //

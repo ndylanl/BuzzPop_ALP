@@ -11,6 +11,7 @@ struct ContentView: View {
     @State var bool = false
     
     @State private var selection: Tab = .game
+    @StateObject var user = User(ID: 1, username: "Reef", password: "reef123", score: 100, notification: true)
     
     enum Tab {
         case game
@@ -26,7 +27,7 @@ struct ContentView: View {
     var body: some View {
         
             TabView(selection: $selection) {
-                GameView()
+                GameView(user: user)
                     .tabItem {
                         Label("Game", systemImage: "gamecontroller")
                     }
@@ -38,7 +39,7 @@ struct ContentView: View {
                     }
                     .tag(Tab.history)
                 
-                ProfileView(user: User(ID: 1, username: "Reef", password: "reef123", score: 100, notification: true), showingEdit: $bool)
+                ProfileHost(user: user)
                     .tabItem{
                         Label("Profile", systemImage: "person")
                     }
