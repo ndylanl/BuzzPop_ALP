@@ -8,13 +8,18 @@
 import SwiftUI
 
 struct HistoryRow: View {
+    
+    @ObservedObject var history: History
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack{
+            
+        }
     }
 }
-
-struct HistoryRow_Previews: PreviewProvider {
-    static var previews: some View {
-        HistoryRow()
-    }
-}
+//
+//struct HistoryRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HistoryRow()
+//    }
+//}

@@ -22,6 +22,7 @@ class Game: NSObject, ObservableObject {
     @Published var curPoints = 0
     @Published var correctAnswer = false
     @Published var lose = false
+    @Published var streak = 0
 
     private var timer: Timer?
 
@@ -68,7 +69,7 @@ class Game: NSObject, ObservableObject {
         user.score += pointsAwarded
         pointsAwarded = 100
         guessCount = 0
-        
+        streak += 1
     }
     
     func guessAnswer(guess: String){
@@ -96,10 +97,12 @@ class Game: NSObject, ObservableObject {
         lose = false
         nextMusic()
         history.addScore(score: curPoints)
+        history.addStreak(streak: streak)
         curPoints = 0
         pointsAwarded = 100
         guesses.removeAll()
         guessCount = 0
+        streak = 0
     }
     
     func updateFilteredSongTitles(guess: String) {

@@ -9,19 +9,19 @@ import Foundation
 
 class History: ObservableObject{
     @Published var score: [Int]
-    
+    @Published var streak: [Int]
+        
     init() {
         self.score = [0, 100, 200, 250, 200, 150, 300]
-    }
-    
-    
-    
-    func sortScore(){
-        score.sort(by: >)
+        self.streak = [0, 1, 2, 3, 4, 3, 5]
     }
     
     func addScore(score: Int){
         self.score.append(score)
+    }
+    
+    func addStreak(streak: Int){
+        self.streak.append(streak)
     }
 
 }
