@@ -10,8 +10,9 @@ import SwiftUI
 struct ContentView: View {
     @State var bool = false
     
-    @State private var selection: Tab = .game
-    @StateObject var user = User(ID: 1, username: "Reef", password: "reef123", score: 100, notification: true)
+    @State private var selection: Tab = .history
+    @StateObject var user = User(ID: 1, username: "Reef", password: "reef123", score: 0, notification: true)
+    @StateObject var history = History()
     
     enum Tab {
         case game
@@ -27,13 +28,13 @@ struct ContentView: View {
     var body: some View {
         
             TabView(selection: $selection) {
-                GameView(user: user)
+                GameView(user: user, history: history)
                     .tabItem {
                         Label("Game", systemImage: "gamecontroller")
                     }
                     .tag(Tab.game)
                 
-                HistoryView()
+                HistoryView(history: history)
                     .tabItem {
                         Label("History", systemImage: "clock.arrow.circlepath")
                     }

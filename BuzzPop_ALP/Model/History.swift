@@ -11,9 +11,7 @@ class History: ObservableObject{
     @Published var score: [Int]
     
     init() {
-        self.score = [
-        300, 180, 230, 400, 500, 120, 250, 120
-        ]
+        self.score = [0, 100, 200, 250, 200, 150, 300]
     }
     
     

@@ -11,7 +11,8 @@ struct MainGameView: View {
     @Binding var Focused: Bool
     @ObservedObject var viewModel: Game
     @Binding var searchText: String
-    
+    @ObservedObject var history: History
+
     var body: some View {
         if viewModel.lose{
             VStack{
@@ -40,7 +41,7 @@ struct MainGameView: View {
                     .padding([.leading, .trailing])
                 }
                 Button(action: {
-                    viewModel.loseGame()
+                    viewModel.loseGame(history: history)
                 }) {
                     Text("New Game")
                 }
