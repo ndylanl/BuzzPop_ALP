@@ -28,7 +28,6 @@ struct ProfileEditor: View {
                 
                 Button("Save") {
                     user.username = username
-                    user.password = password
                     
                     print(user.username)
                     
@@ -55,7 +54,6 @@ struct ProfileEditor: View {
             }
         }.onAppear() {
             username = user.username
-            password = user.password
         }
         .background(Color(red: 20/255, green: 25/255, blue: 35/255, opacity: 0.99))
 

@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    @AppStorage("onboarding") var isOnboardingViewActive: Bool = false
+
     @State var bool = false
     
-    @State private var selection: Tab = .history
-    @StateObject var user = User(ID: 1, username: "Reef", password: "reef123", score: 0, notification: true)
+    @State private var selection: Tab = .game
+    @StateObject var user = User(ID: 1, username: "", password: "", score: 0, notification: true)
     @StateObject var history = History()
     
     enum Tab {
@@ -27,6 +29,8 @@ struct ContentView: View {
     
     var body: some View {
         
+        if isOnboardingViewActive{
+            
             TabView(selection: $selection) {
                 GameView(user: user, history: history)
                     .tabItem {
@@ -47,6 +51,10 @@ struct ContentView: View {
                     .tag(Tab.profile)
             }
             .accentColor(.green)
+        } else{
+            Onboarding()
+
+        }
     }
 }
 

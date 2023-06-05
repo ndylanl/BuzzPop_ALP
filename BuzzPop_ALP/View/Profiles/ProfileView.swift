@@ -22,7 +22,7 @@ struct ProfileView: View {
                 Text("Profile")
                     .bold()
                     .font(.largeTitle)
-//                    .foregroundColor(.white)
+                    .foregroundColor(.white)
                 
                 //username
                 HStack{
@@ -32,15 +32,14 @@ struct ProfileView: View {
                         .padding(.trailing)
                     Text("#\(user.ID)")
                 }
-                .background(Color(red: 20/255, green: 25/255, blue: 35/255, opacity: 0.99))
 
-//                .foregroundColor(.white)
+                .foregroundColor(.white)
                 
                 
                 Text("Score:")
                     .bold()
                     .font(.title2)
-//                    .foregroundColor(.white)
+                    .foregroundColor(.white)
                 
                 //score
                 HStack{
@@ -50,10 +49,9 @@ struct ProfileView: View {
                     
                     Text("\(user.score) Points")
                 }
-                .background(Color(red: 20/255, green: 25/255, blue: 35/255, opacity: 0.99))
 
                 .padding(.bottom)
-//                .foregroundColor(.white)
+                .foregroundColor(.white)
                 
                 
                 Form{
@@ -64,21 +62,24 @@ struct ProfileView: View {
                             .onTapGesture {
                                 showingEdit.toggle()
                             }
+                            .foregroundColor(.black)
 
                         
                         Toggle(isOn: $user.notification){
                             Text("Push Notification")
                         }
+                        .foregroundColor(.black)
 
                         
                         Text("Sign Out")
                             .foregroundColor(.red)
 
                     }
+                    .foregroundColor(.white)
 
                 }
                 .scrollContentBackground(.hidden)
-                .background(Color(red: 20/255, green: 25/255, blue: 35/255, opacity: 0.99))
+                .background(Color.clear)
 
                 
                 Spacer()

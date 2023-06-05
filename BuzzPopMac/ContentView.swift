@@ -36,7 +36,7 @@ struct ContentView: View {
                                 .foregroundColor(Color("primaryColor"))
                                 .font(.title)
                                 .fixedSize(horizontal: true, vertical: false)
-                                .frame(width: 300, height: 50, alignment: .center)
+                                    .frame(width: 300, height: 50, alignment: .center)
                         }
                     }
                     .fixedSize(horizontal: true, vertical: false)
