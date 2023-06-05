@@ -17,9 +17,13 @@ struct HistoryView: View {
 
         VStack{
             LineView(data: scores, title: "History", style: customdarkstyle, legendSpecifier: "%.0f")
+                .preferredColorScheme(.dark)
                 .padding()
-                .padding(.vertical, 150)
+                .padding(.vertical, 20)
+            
+            ScrollView{
                 
+            }
             
         }
         .background(Color(red: 20/255, green: 25/255, blue: 35/255, opacity: 0.99))
@@ -27,6 +31,7 @@ struct HistoryView: View {
         
     }
 }
+
 
 
 //struct HistoryView_Previews: PreviewProvider {
