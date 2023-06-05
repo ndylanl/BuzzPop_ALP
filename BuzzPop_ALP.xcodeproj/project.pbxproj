@@ -67,6 +67,8 @@
 		04F8A57C2A2C51EA00ED8E50 /* Coldplay - The Scientist.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04F8A57A2A2C51EA00ED8E50 /* Coldplay - The Scientist.mp3 */; };
 		04F8A57E2A2C51FB00ED8E50 /* PinkPantheress Ice Spice - Boys a liar Pt 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04F8A57D2A2C51FB00ED8E50 /* PinkPantheress Ice Spice - Boys a liar Pt 2.mp3 */; };
 		04F8A57F2A2C51FB00ED8E50 /* PinkPantheress Ice Spice - Boys a liar Pt 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04F8A57D2A2C51FB00ED8E50 /* PinkPantheress Ice Spice - Boys a liar Pt 2.mp3 */; };
+		26DB3DF42A2E0B80005D1F1B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DB3DF32A2E0B80005D1F1B /* LoginView.swift */; };
+		26DB3DF62A2E0B96005D1F1B /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DB3DF52A2E0B96005D1F1B /* RegisterView.swift */; };
 		42A41D302A2DEEA9003BCEC9 /* Joseph Vincent - Cant Take My Eyes Off You Lyrics.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 42A41D2E2A2DEEA9003BCEC9 /* Joseph Vincent - Cant Take My Eyes Off You Lyrics.mp3 */; };
 		42A41D312A2DEEAA003BCEC9 /* Joseph Vincent - Cant Take My Eyes Off You Lyrics.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 42A41D2E2A2DEEA9003BCEC9 /* Joseph Vincent - Cant Take My Eyes Off You Lyrics.mp3 */; };
 		42A41D322A2DEEAA003BCEC9 /* Radiohead -  Creep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 42A41D2F2A2DEEA9003BCEC9 /* Radiohead -  Creep.mp3 */; };
@@ -138,6 +140,8 @@
 		04F8A5772A2C51D400ED8E50 /* Labrinth - Jealous.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Labrinth - Jealous.mp3"; sourceTree = "<group>"; };
 		04F8A57A2A2C51EA00ED8E50 /* Coldplay - The Scientist.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Coldplay - The Scientist.mp3"; sourceTree = "<group>"; };
 		04F8A57D2A2C51FB00ED8E50 /* PinkPantheress Ice Spice - Boys a liar Pt 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "PinkPantheress Ice Spice - Boys a liar Pt 2.mp3"; sourceTree = "<group>"; };
+		26DB3DF32A2E0B80005D1F1B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		26DB3DF52A2E0B96005D1F1B /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		42A41D2E2A2DEEA9003BCEC9 /* Joseph Vincent - Cant Take My Eyes Off You Lyrics.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Joseph Vincent - Cant Take My Eyes Off You Lyrics.mp3"; sourceTree = "<group>"; };
 		42A41D2F2A2DEEA9003BCEC9 /* Radiohead -  Creep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Radiohead -  Creep.mp3"; sourceTree = "<group>"; };
 		42A426122A1C3FD200884FE7 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
@@ -271,6 +275,8 @@
 				0474BE062A0A722400D9A3FE /* View */,
 				0474BDD22A0A660900D9A3FE /* BuzzPop_ALPApp.swift */,
 				0474BDD42A0A660900D9A3FE /* ContentView.swift */,
+				26DB3DF32A2E0B80005D1F1B /* LoginView.swift */,
+				26DB3DF52A2E0B96005D1F1B /* RegisterView.swift */,
 				0474BDD62A0A660B00D9A3FE /* Assets.xcassets */,
 				0474BDD82A0A660B00D9A3FE /* Preview Content */,
 			);
@@ -576,8 +582,10 @@
 				0474BE002A0A6C8A00D9A3FE /* User.swift in Sources */,
 				041840202A0DC7E3005A02F7 /* ProfileHost.swift in Sources */,
 				0474BE022A0A6C9F00D9A3FE /* Game.swift in Sources */,
+				26DB3DF62A2E0B96005D1F1B /* RegisterView.swift in Sources */,
 				0474BDD52A0A660900D9A3FE /* ContentView.swift in Sources */,
 				0474BDD32A0A660900D9A3FE /* BuzzPop_ALPApp.swift in Sources */,
+				26DB3DF42A2E0B80005D1F1B /* LoginView.swift in Sources */,
 				0474BDFE2A0A6C8000D9A3FE /* Music.swift in Sources */,
 				0474BE132A0A805B00D9A3FE /* GameControlView.swift in Sources */,
 				0474BE0B2A0A726700D9A3FE /* GameView.swift in Sources */,
