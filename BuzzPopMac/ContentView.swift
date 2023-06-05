@@ -44,7 +44,7 @@ struct ContentView: View {
                     .buttonStyle(PlainButtonStyle())
 
                     // history
-                    NavigationLink(destination: ProfileView(user: user)) {
+                    NavigationLink(destination: MacHistoryView(history: history)) {
                         ZStack {
                             Color.white
                                 .cornerRadius(15)

@@ -74,6 +74,7 @@
 		42A41D322A2DEEAA003BCEC9 /* Radiohead -  Creep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 42A41D2F2A2DEEA9003BCEC9 /* Radiohead -  Creep.mp3 */; };
 		42A41D332A2DEEAA003BCEC9 /* Radiohead -  Creep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 42A41D2F2A2DEEA9003BCEC9 /* Radiohead -  Creep.mp3 */; };
 		42A41D352A2E3677003BCEC9 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A41D342A2E3677003BCEC9 /* OnboardingView.swift */; };
+		42A41D372A2E4E90003BCEC9 /* MacHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A41D362A2E4E90003BCEC9 /* MacHistoryView.swift */; };
 		42A426132A1C3FD200884FE7 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A426122A1C3FD200884FE7 /* History.swift */; };
 		42A426162A1C971B00884FE7 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A426152A1C971B00884FE7 /* HistoryView.swift */; };
 		42A4261D2A204B2F00884FE7 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 42A4261C2A204B2F00884FE7 /* SwiftUICharts */; };
@@ -146,6 +147,7 @@
 		42A41D2E2A2DEEA9003BCEC9 /* Joseph Vincent - Cant Take My Eyes Off You Lyrics.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Joseph Vincent - Cant Take My Eyes Off You Lyrics.mp3"; sourceTree = "<group>"; };
 		42A41D2F2A2DEEA9003BCEC9 /* Radiohead -  Creep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Radiohead -  Creep.mp3"; sourceTree = "<group>"; };
 		42A41D342A2E3677003BCEC9 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		42A41D362A2E4E90003BCEC9 /* MacHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacHistoryView.swift; sourceTree = "<group>"; };
 		42A426122A1C3FD200884FE7 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 		42A426152A1C971B00884FE7 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -196,6 +198,7 @@
 		042916372A1FAFAD003E00A0 /* BuzzPopMac */ = {
 			isa = PBXGroup;
 			children = (
+				42A41D382A2E4E9A003BCEC9 /* MacHistory */,
 				04F8A5562A28451300ED8E50 /* MacGame */,
 				042916382A1FAFAD003E00A0 /* BuzzPopMacApp.swift */,
 				0429163A2A1FAFAD003E00A0 /* ContentView.swift */,
@@ -350,6 +353,14 @@
 				04F8A5632A2855AD00ED8E50 /* MacGameControlView.swift */,
 			);
 			path = MacGame;
+			sourceTree = "<group>";
+		};
+		42A41D382A2E4E9A003BCEC9 /* MacHistory */ = {
+			isa = PBXGroup;
+			children = (
+				42A41D362A2E4E90003BCEC9 /* MacHistoryView.swift */,
+			);
+			path = MacHistory;
 			sourceTree = "<group>";
 		};
 		42A426142A1C402D00884FE7 /* History */ = {
@@ -562,6 +573,7 @@
 				04F8A5642A2855AD00ED8E50 /* MacGameControlView.swift in Sources */,
 				0429164C2A1FBA3B003E00A0 /* History.swift in Sources */,
 				0429163B2A1FAFAD003E00A0 /* ContentView.swift in Sources */,
+				42A41D372A2E4E90003BCEC9 /* MacHistoryView.swift in Sources */,
 				04F8A5582A28452E00ED8E50 /* MacGameView.swift in Sources */,
 				0429164F2A1FC922003E00A0 /* ProfileView.swift in Sources */,
 				04F8A5622A28554D00ED8E50 /* MacTopGameView.swift in Sources */,

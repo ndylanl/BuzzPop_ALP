@@ -87,7 +87,9 @@ struct ProfileView: View {
             .background(Color(red: 20/255, green: 25/255, blue: 35/255, opacity: 0.99))
             .edgesIgnoringSafeArea(.all)
             .padding()
+            .padding(8)
     }
+    
     
 }
 //
