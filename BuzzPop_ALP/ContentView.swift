@@ -11,7 +11,7 @@ struct ContentView: View {
     @State var bool = false
     
     @State private var selection: Tab = .history
-    @StateObject var user = User(ID: 1, username: "Reef", password: "reef123", score: 100, notification: true)
+    @StateObject var user = User(ID: 1, username: "Reef", password: "reef123", score: 0, notification: true)
     @StateObject var history = History()
     
     enum Tab {
