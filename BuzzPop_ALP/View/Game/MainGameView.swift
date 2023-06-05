@@ -108,9 +108,9 @@ struct MainGameView: View {
                             ForEach(viewModel.filteredSongTitles, id: \.self){guess in
                                 HStack {
                                     Button(action:  {
-                                        searchText = guess.title
+                                        searchText = "\(guess.artist) - \(guess.title)"
                                     }){
-                                        Text(guess.title)
+                                        Text("\(guess.artist) - \(guess.title)")
                                             .foregroundColor(Color.white)
                                             .padding(.leading)
                                     }

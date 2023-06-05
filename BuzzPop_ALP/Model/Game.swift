@@ -78,7 +78,10 @@ class Game: NSObject, ObservableObject {
         if(guess.isEmpty){
             return
         }
-        if(guess.lowercased() == curMusic.title.lowercased()){
+//        if(guess.lowercased() == curMusic.title.lowercased()){
+//
+//        }
+        if(guess.lowercased().contains(curMusic.title.lowercased())){
             if(!isPlaying){
                 audioPlayer?.currentTime = TimeInterval(duration)
                 audioPlayer?.play()
@@ -109,7 +112,8 @@ class Game: NSObject, ObservableObject {
     
     func updateFilteredSongTitles(guess: String) {
         filteredSongTitles = listMusic.filter {
-            $0.title.lowercased().contains(guess.lowercased())
+            $0.title.lowercased().contains(guess.lowercased()) ||
+            $0.artist.lowercased().contains(guess.lowercased())
         }
     }
     
