@@ -97,6 +97,7 @@ class Game: NSObject, ObservableObject {
         lose = false
         nextMusic()
         history.addScore(score: curPoints)
+        curPoints = 0
         pointsAwarded = 100
         guesses.removeAll()
         guessCount = 0
