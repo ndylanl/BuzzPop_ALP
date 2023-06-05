@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Onboarding: View {
+struct OnboardingView: View {
     // MARK: - Property
     
     @AppStorage("onboarding") var isOnboardingViewActivity: Bool = false
@@ -110,6 +110,6 @@ struct Onboarding: View {
 // MARK: - PREVIEW
 struct Onboarding_Previews: PreviewProvider {
     static var previews: some View {
-        Onboarding()
+        OnboardingView()
     }
 }

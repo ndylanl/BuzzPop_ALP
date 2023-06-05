@@ -14,6 +14,7 @@ struct GameControlView: View {
     @Binding var Focused: Bool
     
     var body: some View {
+
         VStack{
             HStack{
                 Text(viewModel.formatTime(viewModel.audioPlayer?.currentTime ?? 0.0))

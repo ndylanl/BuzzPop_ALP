@@ -13,7 +13,7 @@ struct ContentView: View {
     @State var bool = false
     
     @State private var selection: Tab = .game
-    @StateObject var user = User(ID: 1, username: "", password: "", score: 0, notification: true)
+    @StateObject var user = User(ID: 1, username: "Bob", password: "", score: 0, notification: true)
     @StateObject var history = History()
     
     enum Tab {
@@ -52,7 +52,7 @@ struct ContentView: View {
             }
             .accentColor(.green)
         } else{
-            Onboarding()
+            OnboardingView()
 
         }
     }

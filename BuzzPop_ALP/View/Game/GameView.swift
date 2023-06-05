@@ -16,8 +16,8 @@ struct GameView: View {
     @State private var searchText = ""
     @ObservedObject var user: User
     @ObservedObject var history: History
-
-
+    
+    
     var body: some View {
         ZStack{
             

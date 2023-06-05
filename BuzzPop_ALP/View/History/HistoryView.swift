@@ -32,34 +32,25 @@ struct HistoryView: View {
                 .preferredColorScheme(.dark)
                 .padding()
             
-           
-
-            
-
-            List {
-                ForEach(Array(score.enumerated().reversed()).map { GameItem(index: $0.offset, score: $0.element) }) { gameItem in
-                    HStack {
-                        Text("Game \(gameItem.index + 1)")
-                            .padding(.horizontal)
-                        Text("Streak \(streak[gameItem.index])")
-                            .padding(.horizontal)
-                        Spacer()
-                        Text("Score \(gameItem.score)")
-                            .padding(.horizontal)
+            if(score.count != 1){
+                List {
+                    ForEach(Array(score.enumerated().reversed()).dropLast().map { GameItem(index: $0.offset, score: $0.element) }) { gameItem in
+                        HStack {
+                            Text("Game \(gameItem.index)")
+                                .padding(.horizontal)
+                            Text("Streak \(streak[gameItem.index])")
+                                .padding(.horizontal)
+                            Spacer()
+                            Text("Score \(gameItem.score)")
+                                .padding(.horizontal)
+                        }
                     }
+                    .padding(.vertical, 4)
+                    .listRowBackground(Color.clear)
                 }
-                .padding(.vertical, 4)
-                .listRowBackground(Color.clear)
+                .listStyle(.plain)
+                .padding(.vertical, 10)
             }
-            .listStyle(.plain)
-            .padding(.vertical, 10)
-
-
-
-
-            
-            
-            
             
         }
         .background(Color(red: 20/255, green: 25/255, blue: 35/255, opacity: 0.99))
