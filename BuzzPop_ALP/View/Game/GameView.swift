@@ -15,13 +15,14 @@ struct GameView: View {
     @State private var Focused = false
     @State private var searchText = ""
     @ObservedObject var user: User
+    @ObservedObject var history: History
 
 
     var body: some View {
         ZStack{
             
             VStack(){
-                MainGameView(Focused: $Focused, viewModel: viewModel, searchText: $searchText)
+                MainGameView(Focused: $Focused, viewModel: viewModel, searchText: $searchText, history: history)
                 Spacer()
                 if(!viewModel.lose){
                     GameControlView(searchText: $searchText, viewModel: viewModel, Focused: $Focused)

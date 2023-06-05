@@ -34,7 +34,6 @@
 		0474BE002A0A6C8A00D9A3FE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474BDFF2A0A6C8A00D9A3FE /* User.swift */; };
 		0474BE022A0A6C9F00D9A3FE /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474BE012A0A6C9F00D9A3FE /* Game.swift */; };
 		0474BE0B2A0A726700D9A3FE /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474BE0A2A0A726700D9A3FE /* GameView.swift */; };
-		0474BE0D2A0A730B00D9A3FE /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474BE0C2A0A730B00D9A3FE /* SplashScreen.swift */; };
 		0474BE112A0A804C00D9A3FE /* MainGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474BE102A0A804C00D9A3FE /* MainGameView.swift */; };
 		0474BE132A0A805B00D9A3FE /* GameControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474BE122A0A805B00D9A3FE /* GameControlView.swift */; };
 		04F8A53A2A1F0AF600ED8E50 /* YOASOBI - Racing Into The Night.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04F8A5392A1F0AF600ED8E50 /* YOASOBI - Racing Into The Night.mp3 */; };
@@ -119,7 +118,6 @@
 		0474BDFF2A0A6C8A00D9A3FE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		0474BE012A0A6C9F00D9A3FE /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		0474BE0A2A0A726700D9A3FE /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
-		0474BE0C2A0A730B00D9A3FE /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		0474BE102A0A804C00D9A3FE /* MainGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGameView.swift; sourceTree = "<group>"; };
 		0474BE122A0A805B00D9A3FE /* GameControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameControlView.swift; sourceTree = "<group>"; };
 		04F8A5392A1F0AF600ED8E50 /* YOASOBI - Racing Into The Night.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "YOASOBI - Racing Into The Night.mp3"; sourceTree = "<group>"; };
@@ -265,7 +263,6 @@
 				0474BE062A0A722400D9A3FE /* View */,
 				0474BDD22A0A660900D9A3FE /* BuzzPop_ALPApp.swift */,
 				0474BDD42A0A660900D9A3FE /* ContentView.swift */,
-				0474BE0C2A0A730B00D9A3FE /* SplashScreen.swift */,
 				0474BDD62A0A660B00D9A3FE /* Assets.xcassets */,
 				0474BDD82A0A660B00D9A3FE /* Preview Content */,
 			);
@@ -562,7 +559,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				42A426132A1C3FD200884FE7 /* History.swift in Sources */,
-				0474BE0D2A0A730B00D9A3FE /* SplashScreen.swift in Sources */,
 				0474BE112A0A804C00D9A3FE /* MainGameView.swift in Sources */,
 				0418401F2A0DC7E3005A02F7 /* ProfileEditor.swift in Sources */,
 				0474BE002A0A6C8A00D9A3FE /* User.swift in Sources */,
