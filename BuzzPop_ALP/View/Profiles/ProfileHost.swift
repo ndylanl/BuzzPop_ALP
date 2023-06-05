@@ -19,7 +19,7 @@ struct ProfileHost: View {
                .sheet(isPresented: $showingEdit) {
                    ProfileEditor(user: user, showingEdit: $showingEdit)
                }
-               .background(Color(UIColor.systemGroupedBackground))
+               .background(Color(red: 20/255, green: 25/255, blue: 35/255, opacity: 0.99))
 
            
     }

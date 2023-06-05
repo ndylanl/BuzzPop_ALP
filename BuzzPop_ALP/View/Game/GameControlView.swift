@@ -20,10 +20,10 @@ struct GameControlView: View {
                 Spacer()
                 Button(action: {
                     withAnimation {
-//                        isPlaying.toggle()
+                        //                        isPlaying.toggle()
                     }
                     viewModel.playMusic()
-
+                    
                 }) {
                     Image(systemName: viewModel.isPlaying ? "pause.circle.fill" : "play.circle.fill")
                         .font(.system(size: 80))
@@ -46,8 +46,8 @@ struct GameControlView: View {
                     Button(action: {
                         self.searchText = ""
                     }) {
-                    Image(systemName: "xmark.circle.fill")
-                        .foregroundColor(.gray)
+                        Image(systemName: "xmark.circle.fill")
+                            .foregroundColor(.gray)
                     }
                 }
             }
@@ -74,14 +74,27 @@ struct GameControlView: View {
                         viewModel.increaseDuration(amount: 5)
                     }) {
                         Text("Skip(+5s)")
+                            .background(
+                                RoundedRectangle(cornerRadius: 8)
+                                    .stroke(.white, lineWidth: 1)
+                                    .frame(width: 110, height: 45)
+                            )
                     }
+                    .padding()
                     Spacer()
                     Button(action: {
                         viewModel.guessAnswer(guess: searchText)
                         searchText = ""
                     }) {
                         Text("Submit")
+                            .background(
+                                RoundedRectangle(cornerRadius: 8)
+                                    .stroke(.white, lineWidth: 1)
+                                    .frame(width: 110, height: 45)
+                            )
                     }
+                    .padding()
+                    .padding(.trailing, 10)
                 }
                 .padding([.leading, .trailing])
                 .padding([.leading, .trailing])

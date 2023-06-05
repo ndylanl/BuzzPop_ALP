@@ -32,6 +32,8 @@ struct ProfileView: View {
                         .padding(.trailing)
                     Text("#\(user.ID)")
                 }
+                .background(Color(red: 20/255, green: 25/255, blue: 35/255, opacity: 0.99))
+
 //                .foregroundColor(.white)
                 
                 
@@ -48,6 +50,8 @@ struct ProfileView: View {
                     
                     Text("\(user.score) Points")
                 }
+                .background(Color(red: 20/255, green: 25/255, blue: 35/255, opacity: 0.99))
+
                 .padding(.bottom)
 //                .foregroundColor(.white)
                 
@@ -55,26 +59,35 @@ struct ProfileView: View {
                 Form{
                     Section(header: Text("Account Settings")){
                         Text("Change Credentials")
+                        
                         // if pressed change
                             .onTapGesture {
                                 showingEdit.toggle()
                             }
+
                         
                         Toggle(isOn: $user.notification){
                             Text("Push Notification")
                         }
+
                         
                         Text("Sign Out")
                             .foregroundColor(.red)
+
                     }
+
                 }
+                .scrollContentBackground(.hidden)
+                .background(Color(red: 20/255, green: 25/255, blue: 35/255, opacity: 0.99))
+
                 
                 Spacer()
             }
-            .background(Color(UIColor.systemGroupedBackground))
+            .background(Color(red: 20/255, green: 25/255, blue: 35/255, opacity: 0.99))
             .edgesIgnoringSafeArea(.all)
             .padding()
     }
+    
 }
 //
 //struct ProfileSummary_Previews: PreviewProvider {

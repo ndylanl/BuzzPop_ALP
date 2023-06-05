@@ -47,7 +47,7 @@ class Game: NSObject, ObservableObject {
             Music(url: "Joseph Vincent - Cant Take My Eyes Off You Lyrics", title: "Cant Take My Eyes Off You Lyrics", artist: "Joseph Vincent"),
 
         ]
-        curMusic = Music(url: "Tame Impala - The Less I Know The Better.mp3", title: "The Less I Know The Better", artist: "Tame Impala")
+        curMusic = Music(url: "Tame Impala - The Less I Know The Better", title: "The Less I Know The Better", artist: "Tame Impala")
         super.init()
         initializeMusic()
     }

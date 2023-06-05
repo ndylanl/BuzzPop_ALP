@@ -15,15 +15,15 @@ struct ProfileEditor: View {
     @State var username = ""
     @State var password = ""
     @Binding var showingEdit: Bool
-
-
+    
+    
     var body: some View {
         VStack{
             HStack {
                 Button("Cancel") {
                     showingEdit.toggle()
                 }
-            
+                
                 Spacer()
                 
                 Button("Save") {
@@ -57,6 +57,8 @@ struct ProfileEditor: View {
             username = user.username
             password = user.password
         }
+        .background(Color(red: 20/255, green: 25/255, blue: 35/255, opacity: 0.99))
+
     }
     
 }
