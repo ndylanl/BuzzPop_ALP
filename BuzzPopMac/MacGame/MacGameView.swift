@@ -13,12 +13,13 @@ struct MacGameView: View {
     @State private var Focused = false
     @State private var searchText = ""
     @ObservedObject var user: User
+    @ObservedObject var history: History
 
     var body: some View {
         ZStack{
             
             VStack(){
-                MacTopGameView(Focused: $Focused, viewModel: viewModel, searchText: $searchText)
+                MacTopGameView(Focused: $Focused, viewModel: viewModel, searchText: $searchText, history: history)
                     .padding(.top)
                     .padding(.top)
                     .padding(.top)
@@ -50,8 +51,8 @@ struct MacGameView: View {
     }
 }
 
-struct MacGameView_Previews: PreviewProvider {
-    static var previews: some View {
-        MacGameView()
-    }
-}
+//struct MacGameView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        MacGameView()
+//    }
+//}

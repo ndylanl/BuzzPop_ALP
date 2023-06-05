@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
 
     @ObservedObject var user = User(ID: 123, username: "John", password: "password", score: 0, notification: true)
+    @ObservedObject var history = History()
 
 
     var body: some View {
@@ -27,7 +28,7 @@ struct ContentView: View {
                     
                     
                     // play game
-                    NavigationLink(destination: MacGameView(user: user)) {
+                    NavigationLink(destination: MacGameView(user: user, history: history)) {
                         ZStack {
                             Color.white
                                 .cornerRadius(15)

@@ -43,6 +43,8 @@ class Game: NSObject, ObservableObject {
             Music(url: "Smash Mouth - All Star", title: "All Star", artist: "Smash Mouth"),
             Music(url: "PinkPantheress Ice Spice - Boys a liar Pt 2", title: "Boys a liar Pt 2", artist: "PinkPantheress Ice Spice"),
             Music(url: "Doja Cat - Say So", title: "Say So", artist: "Doja Cat"),
+            Music(url: "Radiohead -  Creep", title: "Creep", artist: "Radiohead"),
+            Music(url: "Joseph Vincent - Cant Take My Eyes Off You Lyrics", title: "Cant Take My Eyes Off You Lyrics", artist: "Joseph Vincent"),
 
         ]
         curMusic = Music(url: "Tame Impala - The Less I Know The Better.mp3", title: "The Less I Know The Better", artist: "Tame Impala")

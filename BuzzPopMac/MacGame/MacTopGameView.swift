@@ -11,6 +11,7 @@ struct MacTopGameView: View {
     @Binding var Focused: Bool
     @ObservedObject var viewModel: Game
     @Binding var searchText: String
+    @StateObject var history: History
     
     var body: some View {
         if viewModel.lose{
@@ -43,7 +44,7 @@ struct MacTopGameView: View {
                     .padding(.bottom)
                 }
                 Button(action: {
-                    viewModel.loseGame()
+                    viewModel.loseGame(history: history)
                 }) {
                     Text("New Game")
                 }
