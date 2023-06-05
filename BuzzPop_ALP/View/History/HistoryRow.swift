@@ -22,4 +22,224 @@ struct HistoryRow: View {
 //    static var previews: some View {
 //        HistoryRow()
 //    }
+//}//
+//struct HistoryRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HistoryRow()
+//    }
+//}//
+//struct HistoryRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HistoryRow()
+//    }
+//}//
+//struct HistoryRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HistoryRow()
+//    }
+//}//
+//struct HistoryRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HistoryRow()
+//    }
+//}//
+//struct HistoryRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HistoryRow()
+//    }
+//}//
+//struct HistoryRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HistoryRow()
+//    }
+//}//
+//struct HistoryRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HistoryRow()
+//    }
+//}//
+//struct HistoryRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HistoryRow()
+//    }
+//}//
+//struct HistoryRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HistoryRow()
+//    }
+//}//
+//struct HistoryRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HistoryRow()
+//    }
+//}//
+//struct HistoryRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HistoryRow()
+//    }
+//}//
+//struct HistoryRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HistoryRow()
+//    }
+//}//
+//struct HistoryRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HistoryRow()
+//    }
+//}//
+//struct HistoryRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HistoryRow()
+//    }
+//}//
+//struct HistoryRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HistoryRow()
+//    }
+//}//
+//struct HistoryRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HistoryRow()
+//    }
+//}//
+//struct HistoryRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HistoryRow()
+//    }
+//}//
+//struct HistoryRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HistoryRow()
+//    }
+//}//
+//struct HistoryRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HistoryRow()
+//    }
+//}//
+//struct HistoryRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HistoryRow()
+//    }
+//}//
+//struct HistoryRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HistoryRow()
+//    }
+//}//
+//struct HistoryRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HistoryRow()
+//    }
+//}//
+//struct HistoryRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HistoryRow()
+//    }
+//}//
+//struct HistoryRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HistoryRow()
+//    }
+//}//
+//struct HistoryRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HistoryRow()
+//    }
+//}//
+//struct HistoryRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HistoryRow()
+//    }
+//}//
+//struct HistoryRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HistoryRow()
+//    }
+//}//
+//struct HistoryRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HistoryRow()
+//    }
+//}//
+//struct HistoryRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HistoryRow()
+//    }
+//}//
+//struct HistoryRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HistoryRow()
+//    }
+//}//
+//struct HistoryRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HistoryRow()
+//    }
+//}//
+//struct HistoryRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HistoryRow()
+//    }
+//}//
+//struct HistoryRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HistoryRow()
+//    }
+//}//
+//struct HistoryRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HistoryRow()
+//    }
+//}//
+//struct HistoryRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HistoryRow()
+//    }
+//}//
+//struct HistoryRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HistoryRow()
+//    }
+//}//
+//struct HistoryRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HistoryRow()
+//    }
+//}//
+//struct HistoryRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HistoryRow()
+//    }
+//}//
+//struct HistoryRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HistoryRow()
+//    }
+//}//
+//struct HistoryRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HistoryRow()
+//    }
+//}//
+//struct HistoryRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HistoryRow()
+//    }
+//}//
+//struct HistoryRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HistoryRow()
+//    }
+//}//
+//struct HistoryRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HistoryRow()
+//    }
+//}//
+//struct HistoryRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HistoryRow()
+//    }
 //}
