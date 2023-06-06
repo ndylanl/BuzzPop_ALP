@@ -14,9 +14,6 @@ class User: ObservableObject {
     @Published var password: String
     @Published var score: Int
     @Published var notification: Bool
-//    @Published var history: History
-
-//    @Published var History: Int
 
     
     init(ID: Int, username: String, password: String, score: Int, notification: Bool) {
@@ -25,6 +22,5 @@ class User: ObservableObject {
         self.password = password
         self.score = score
         self.notification = notification
-//        history = History()
     }
 }

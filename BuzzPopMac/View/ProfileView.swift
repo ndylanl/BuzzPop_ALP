@@ -61,7 +61,6 @@ struct ProfileView: View {
         }
         .padding()
         .background(Color.black)
-        .navigationBarBackButtonHidden(true)
     }
 }
 
